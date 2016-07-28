@@ -83,6 +83,6 @@
     };
     
     $(window).load(function(){
-        $('#div-loading').hide(1000);
+        $('#loading').hide(1000);
     });
     
