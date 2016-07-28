@@ -46,12 +46,30 @@
     });
 
     $(".menu-main-trigger").click(function() {
-       $("#menu-main").fadeToggle("slow");
+        $("#menu-main").css({
+            'z-index': 5555
+        });
+        //$("#menu-main").fadeToggle("slow");
+        if ($("#menu-main").is(":visible")) {
+            $("#menu-main").fadeOut("slow");
+            $('#slides').fadeIn();
+        } else {
+            $('#slides').fadeOut("slow");
+            $("#menu-main").fadeIn("slow");
+        }
     });
 
-    $("#menu-main").click(function(evt){
-        if((!$(evt.target).hasClass('main-nav')) && ($(evt.target).attr('class') != undefined)) {
-           $("#menu-main").fadeToggle("slow");
+    $("#menu-main").click(function(evt) {
+        if ((!$(evt.target).hasClass('main-nav')) && ($(evt.target).attr('class') != undefined)) {
+
+            //$("#menu-main").fadeToggle("slow");
+            if ($("#menu-main").is(":visible")) {
+                $("#menu-main").fadeOut("slow");
+                $('#slides').fadeIn();
+            } else {
+                $('#slides').fadeOut("slow");
+                $("#menu-main").fadeIn("slow");
+            }
         }
     });
 
