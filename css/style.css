@@ -90,6 +90,7 @@
     }
     
     #loading {
+        z-index: 9999;
         background: url('../img/logo/loading.gif');
         height: 30px;
         margin: 0px auto;
