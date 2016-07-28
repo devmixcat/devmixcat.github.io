@@ -19,7 +19,7 @@
             $(".div-menu-logo").mouseleave(function(){
                 $(this).css("background","none");
             });
-
+            showloading();
             $('#slides').superslides({
               animation: 'fade',
               hashchange: true,
@@ -80,8 +80,18 @@
           break;
         }
       }
-    };
+    }
 
-    $(window).load(function(){
-        $('#loading').hide(1000);
-    });
+    function showloading(){
+       document.getElementById("div-loading").style.display = "block";
+    }
+
+    function init(){
+       document.getElementById("div-loading").style.display = "none";
+    }
+
+    if(window.attachEvent){
+        window.attachEvent('onload', init);
+    }else{
+        window.addEventListener('load', init, false);
+    }
