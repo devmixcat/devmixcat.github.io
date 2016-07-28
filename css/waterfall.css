@@ -1,0 +1,80 @@
+
+.waterfall {
+	top: 60px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.flow {
+    width: 458px;
+    position: absolute;
+    background: #f9f9f9;
+  	border: 1px solid #eee;
+    //box-shadow: #cccccc 2px 3px 3px;
+    transition: left .5s linear;
+    -webkit-transition: left .5s linear;
+    -moz-transition: left .5s linear;
+    -o-transition: left .5s linear;
+}
+.flow .flowItem {
+    width: 100%;
+    //font-size: 42pt;
+    color: #000;
+    //text-align: center;
+    z-index: -1;
+}
+
+/* flowItem inside */
+.item-txt{
+    //z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    -webkit-transition: all 0.34s ease;
+    -moz-transition: all 0.34s ease;
+    transition: all 0.34s ease;
+    display: table;
+}
+.item-img{
+    //z-index:101;
+    overflow:hidden;
+}
+.item-img img{
+     width:458;
+     height:auto;
+     overflow: hidden;
+     opacity:0.4;
+     filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+}
+.innerBox{
+     display: table-cell;
+     vertical-align: middle;
+}
+.innerBox h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+.grid-tit {
+    margin: 10px 0 0px 0;
+    font-weight: 300;
+    font-size: 24px;
+    overflow: hidden;
+}
+.fixedheighttext {
+    margin: 10px 0;
+    overflow: hidden;
+}
+.grid-text {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    font-size: 13px;
+}
+.grid-text p{
+   margin: 0 0 10px;
+   display: block;
+}
