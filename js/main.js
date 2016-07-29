@@ -52,9 +52,9 @@
         //$("#menu-main").fadeToggle("slow");
         if ($("#menu-main").is(":visible")) {
             $("#menu-main").fadeOut("slow");
-            $('#slides').fadeIn();
+            $("#slides").fadeIn();
         } else {
-            $('#slides').fadeOut("slow");
+            $("#slides").fadeOut("slow");
             $("#menu-main").fadeIn("slow");
         }
     });
@@ -65,9 +65,9 @@
             //$("#menu-main").fadeToggle("slow");
             if ($("#menu-main").is(":visible")) {
                 $("#menu-main").fadeOut("slow");
-                $('#slides').fadeIn();
+                $("#slides").fadeIn();
             } else {
-                $('#slides').fadeOut("slow");
+                $("#slides").fadeOut("slow");
                 $("#menu-main").fadeIn("slow");
             }
         }
@@ -83,6 +83,6 @@
     };
     
     $(window).load(function(){
-        $('#div-loading').fadeOut("slow");
+        $("#div-loading").fadeOut("slow");
     });
     

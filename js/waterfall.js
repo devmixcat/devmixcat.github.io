@@ -144,12 +144,15 @@ if (!Array.prototype.indexOf) {
 }
 
 $(document).ready(function(){
-	$(".flowItem").find("img").hide();
+	$(".flowItem").find("h2").hide();
+    $(".flowItem").find("p").hide();
     $(".flowItem").mouseover(function(){
-        $(this).find("img").fadeIn("slow");
+        $(this).find("h2").fadeIn("slow");
+        $(this).find("p").fadeIn("slow");
     });
 
     $(".flowItem").mouseleave(function(){
-        $(this).find("img").fadeOut("slow");
+        $(this).find("h2").fadeOut("slow");
+        $(this).find("p").fadeOut("slow");
     });
  });

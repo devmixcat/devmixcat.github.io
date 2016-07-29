@@ -47,8 +47,8 @@
      width:458;
      height:auto;
      overflow: hidden;
-     opacity:0.4;
-     filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+     opacity:0.85;
+     filter:alpha(opacity=85); /* 针对 IE8 以及更早的版本 */
 }
 .innerBox{
      display: table-cell;
