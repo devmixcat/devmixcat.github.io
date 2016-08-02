@@ -71,3 +71,8 @@
 .slides-pagination a.current {
   background: #FFF;
 }
+#slides .slides-container img{
+  width:2000px;
+  height:1336px;
+
+}

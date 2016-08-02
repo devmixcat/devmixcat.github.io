@@ -1,389 +1,79 @@
-<html >
+<html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <head>
-        <style>
-            a{
-                background: transparent;
-            }
-
-            a:link, a:visited {
-                color: #333;
-                text-decoration: none;
-                -webkit-transition: all .3s ease;
-                -moz-transition: all .3s ease;
-                -o-transition: all .3s ease;
-                transition: all .3s ease;
-            }
-
-            body{
-                background-color: #ffffff;
-                color: #333333;
-                font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-                height: 100%;
-                margin: 0;
-                padding: 0;           
-            }
-
-            header{
-                display: block;
-            }
-
-            hr{
-                border: 0px;
-                border-top: 1px solid #eeeeee;
-                display: block;
-                height: 0px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                width:1013px;
-            }
-
-            li {
-                display: list-item;
-                text-align: -webkit-match-parent;
-            }
-
-            nav {
-                display: block;
-            }
-
-            ul ,ol{
-                display: block;
-                margin-top: 0;
-            }
-
-            ul{
-                list-style-type: disc;   
-            }
-
-            #gotop {
-                background: #777;
-                bottom: 8px; 
-                border-radius: 5px;
-                cursor: pointer;
-                color: white;
-                display: none;
-                font-size: 20px;
-                height:24px;
-                line-height: 23px;
-                padding: 0 20px;
-                padding-top: 4px; 
-                position: fixed;
-                right: 20px;
-                text-align: center;
-            }
-            
-            #menu-main{
-                display: none;
-            }
-            
-            .button-group ul, .button-group ul li {
-                margin: 0;
-                padding: 0;
-            }
-            .button-group ul li {
-                list-style: none;
-            }    
-
-            .button-group .button, .button-group ul li a {
-                font-weight: normal;
-                font-size: 14px;
-                background: none;
-                border: none;
-                border-top: 1px solid #ededed;
-                color: #333;
-                display: block !important;
-                margin: 0 auto;
-                padding: 1em 0;
-                text-align: left;
-                width: 100%;
-            }
-
-            .button-group button.last, .button-group ul.main-nav li:last-child {
-                border-bottom: 1px solid #ededed;
-            }
-
-           
-            .cd-header{
-                font-size: 18px;
-                height: 50px;
-                left: 0;
-                line-height: 50px;
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 999;
-            }
-
-            .cd-logo {
-                display: inline-block;
-                line-height: 50px;
-                padding-left: 20px;
-            }
-
-            .cd-logo img {
-                line-height: 50px;
-                margin-top: 2px;
-                overflow: hidden;
-                height: 45px;
-                width: auto;
-            }
-
-            .cd-pager a {
-                border-left: 1px solid #ccc;
-                color: #333;
-                display: inline-block;
-                float: left;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-                width: 50px;
-            }
-
-            .cd-primary-nav {
-                background: rgba(256, 256, 256, 0.98);
-                height: 100%;
-                left: 0;
-                overflow: auto;
-                padding: 80px 0;
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 90;
-            }
-
-            .cd-primary-nav a {
-                border-radius: 0.25em;
-            }
-
-            .floated.right {
-                float: right;
-            }
-
-            .footer{
-                background: #FFFFFF;
-                display: block;
-                margin:15px 5px;
-                margin-bottom:7px;
-                width: 100%;              
-            }
-
-            .imgt1{
-                width: 1013px;
-            }
-
-            .list-inline{
-                list-style: none;
-                margin-top: 0;
-                margin-right: 50px;
-                padding-left: 0;
-            }
-
-            .list-inline > li:first-child {
-                 padding-left: 0;
-            }
-
-            .list-inline > li {
-                display: inline-block;
-                padding-right: 5px;
-                padding-left: 5px;
-            }
-
-            .loadingdiv {
-                left: 50%;
-                margin-top: -15px;
-                margin-left: -15px;
-                position: absolute;
-                text-align: center;
-                top: 50%;
-            }
-
-            .loading {
-                background: url('./img/logo/logo.png');
-                height: 30px;
-                margin: 0px auto;
-                width: 30px;
-                animation: animationFrames ease 1s;
-                animation-iteration-count: infinite;
-                transform-origin: 50% 50%;
-                -webkit-animation: animationFrames ease 1s;
-                -webkit-animation-iteration-count: infinite;
-                -webkit-transform-origin: 50% 50%;
-                -moz-animation: animationFrames ease 1s;
-                -moz-animation-iteration-count: infinite;
-                -moz-transform-origin: 50% 50%;
-                -o-animation: animationFrames ease 1s;
-                -o-animation-iteration-count: infinite;
-                -o-transform-origin: 50% 50%;
-                -ms-animation: animationFrames ease 1s;
-                -ms-animation-iteration-count: infinite;
-                -ms-transform-origin: 50% 50%;
-            }
-     
-            .main-navigation {
-                margin: auto;
-                width: 552px;
-            }
-            
-            .main-nav {
-                margin-top: 2em !important;
-            }
-
-            .menu-inline {
-                margin-top: 3em !important;
-                text-align: center;
-            }
-
-            .menu-inline li {
-                display: inline-block;
-                width: 30%;      
-            }
-
-            .menu-inline li a {
-                border: none !important;
-                text-align: center !important;
-            }
-          
-            .navbar-inverse .cd-primary-nav-trigger {
-                height:50px;
-                line-height: 50px;
-            }
-
-            .navbar-inverse .cd-primary-nav-trigger img{
-                margin-top:10px;
-            }
-
-
-            .navbar .nabar-inverse .nabar-fixed-top .cf{
-                border-width:0 0 1px;
-                top: 0;
-            }
-
-            .navbar-inverse{
-                background-color: rgba(255,255,255,0.6) !important;
-                border-color: #080808; 
-            }
-
-            .navbar-fixed-top{     
-                border-width:0 0 1px;
-                left: 0;
-                position: fixed;
-                right: 0;
-                top: 0;
-                z-index: 1030;
-            }
-
-            .navbar{
-                position: relative;
-                min-height: 50px;
-                margin-bottom: 20px;
-                border: 1px solid transparent;
-                border-bottom: 1px solid #ccc;
-            }
-
-            .navbar ul{
-                display: inline-block;
-                float: left;
-                height: 50px;
-                line-height: 50px;
-                margin: 0px;
-                padding: 0px;
-                padding-left: 20px;
-            }
-
-            .navbar ul li{
-                border-right-width: 1px;
-                float: left;
-                list-style: none;
-                margin: 0px 20px 0px 0px;
-            }
-
-            .pull-right{
-                float: right;
-            }  
-            
-            .sing-spacr{
-                margin:0px auto;
-                margin-top: 80px;
-                text-align: center;
-                width: 1013px;
-            }
-
-            .sing-spacr p { 
-                font-size: 14px;
-                line-height: 26px;
-                margin: 0px auto;
-                padding: 0px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                text-align: left;
-            }
-
-            .sing-tit{
-                font-weight: 300;
-                font-size: 33px;
-                line-height: 1.1;
-                margin-top: 10%;
-                margin-bottom: 5%;
-                text-align: left;
-            }
-        </style>
-    <link rel="stylesheet" href="./css/superslides.css">
-    <link rel="Shortcut Icon" type="image/x-icon" href="./img/logo/logo.ico">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="Shortcut Icon" type="image/x-icon" href="./img/logo/logo.ico">
     </head>
-
     <body>
-         <header class="cd-header">
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <a href="#" class="cd-logo">
-                    <img class="navbar-logo" height="50px" src="./img/logo/logo2.png" alt="" scale="0">
+         <!--Header-->
+         <header id="header-top">
+            <div class="navbar navbar-fixed-top">
+                <a href="#" class="nav-logo">
+                    <img src="./img/logo/logooo.png" alt="logo" scale="0">
                 </a>
-                <div class="cd-pager floated right cf">
-                    <a class="cd-primary-nav-trigger" href="javascript:void(0)">
-                     <img src="./img/logo/menu.png" height="30px">
-                    </a>
+                <div class="div-menu-logo float-right cf">
+                <a class="menu-main-trigger">
+                     <img src="./img/logo/menu.png">
+                </a>
                 </div>
             </div>
         </header>
-        <div class="loadingdiv" id="loading">
-           <div class="loading"></div>
-        </div>
 
+        <!--Main Content-->
+        <div id="main-content">
+            <div class="content">
+                <h3 class="title-content">京都 | 紀事。</h3>
+                <p>
+                <img class="img-type-w" src="./img/pics/test2.jpg"></p>
+                <p>
+                清水寺是熱門景點，幾乎所有的觀光團體和自由行的旅客來京都都會來來到這裡，如果於夢館四條租借和服，來到清水寺可能要行走20-30分鐘的路程，如果不想行走也有市巴士可搭乘，搭乘計程車也不會太貴，要記得歸還和服的時間提早歸還，日本人是很準時的如果超過時間很可能東西都得隔天才拿得回來
+                </p>
+                <p><img class="img-type-w" src="./img/pics/test3.jpg"></p> 
+                <hr>
+            </div>  
+        </div>
+         <!--Menu main-->
         <div id="menu-main">
-            <nav class="button-group cd-primary-nav is-visible">
-                <div id="filters" class="main-navigation">
+            <nav class="button-group primary-nav">
+                <div class="main-navigation">
                     <ul class="main-nav">
-                        <li><a href="#"><span>TOP</span></a></li>
-                        <li><a href="http://slant.jp/category/book/"><span>BOOK</span></a></li>
-                        <li><a href="http://slant.jp/category/exhibition/"><span>EXHIBITION</span></a></li>
-                        <li><a href="http://slant.jp/category/event/"><span>EVENT</span></a></li>
+                        <li>
+                            <a href="#"><span>JAPAN</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>JAIL</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>CATS</span></a>
+                        </li>
                     </ul>    
                     <ul class="main-nav">
-                        <li id="menu-item-642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-642"><a href="http://slant.jp/about/"><span>ABOUT</span></a></li>
-                        <li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-599 current_page_item menu-item-644"><a href="http://slant.jp/contact/"><span>CONTACT</span></a></li>
+                        <li>
+                            <a href="#"><span>ABOUT</span></a>
+                        </li>
+                        <!--<li><a href="#"><span>CONTACT</span></a></li>-->
                     </ul>
                     <ul class="menu-inline">
-                        <li><a href="https://www.facebook.com/slant.kanazawa"><i class="fa fa-facebook fa-3x"></i> <span>Facebook<span></span></span></a></li>
-                        <li><a href="https://twitter.com/Slant_gallery"><i class="fa fa-twitter fa-3x"></i> <span>Twitter<span></span></span></a></li>
-                        <li><a href="http://instagram.com/slant_gallery/"><i class="fa fa-instagram fa-3x"></i> <span>Instagram<span></span></span></a></li>
+                        <li>
+                            <a href="#"><span>Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Instagram</span></a>
+                        </li>
                     </ul>   
                 </div>
             </nav>
         </div>
 
-        <div class="sing-cont">
-            <div class="sing-spacr">
-                <h3 class="sing-tit">京都 | 紀事。</h3>
-                <p>
-                <img class="imgt1"  src="./img/pics/test2.jpg"></p>
-                <p>
-                清水寺是熱門景點，幾乎所有的觀光團體和自由行的旅客來京都都會來來到這裡，如果於夢館四條租借和服，來到清水寺可能要行走20-30分鐘的路程，如果不想行走也有市巴士可搭乘，搭乘計程車也不會太貴，要記得歸還和服的時間提早歸還，日本人是很準時的如果超過時間很可能東西都得隔天才拿得回來
-                </p>
-                <p><img class="imgt1"  src="./img/pics/test3.jpg"></p> 
-                <hr>
-            </div>  
-        </div> 
-
+        <!--Loadingd div-->
+        <div id="div-loading">
+           <div id="loading"><img src="./img/logo/loading.gif"></div>
+        </div>
+        
         <div id="gotop">˄</div>
         
         <!--
@@ -397,64 +87,11 @@
             
         </div>
         -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
         <script src="./js/jquery.easing.1.3.js"></script>
         <script src="./js/jquery.animate-enhanced.min.js"></script>
         <script src="./js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
-        <script>
-            $(document).ready(function(){
-                    $(".main-nav li a").mouseover(function(){
-                        $(this).css("background-color", "black");
-                        $(this).find("span").animate({"margin-left":"20px"},"slow").css("color", "white");
-                    });
-
-                    $(".main-nav li a").mouseleave(function(){
-                        $(this).css("background-color", "transparent");
-                        $(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
-                    });
-                    showloading();
-            });
-
-            $(function(){
-                $("#gotop").click(function(){
-                    jQuery("html,body").animate({
-                        scrollTop:0
-                    },1000);
-                });
-                $(window).scroll(function() {
-                    if ( $(this).scrollTop() > 300){
-                        $("#gotop").fadeIn("fast");
-                    } else {
-                        $('#gotop').stop().fadeOut("fast");
-                    }
-                });
-            });
-
-            $(".cd-primary-nav-trigger").click(function() {
-               $("#menu-main").fadeToggle("slow");
-            });
-            $("#menu-main").click(function(evt){
-                if((!$(evt.target).hasClass('main-nav')) && ($(evt.target).attr('class') != undefined)) {
-                   $("#menu-main").fadeToggle("slow");
-                }
-            });
-
-            function showloading(){
-               document.getElementById("loading").style.display = "block";
-            }
-            function init(){
-              document.getElementById("loading").style.display = "none";
-            }
-
-            if(window.attachEvent)
-            {
-                window.attachEvent('onload', init);
-            }
-            else
-            {
-                window.addEventListener('load', init, false);
-            }
-        </script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
 

@@ -68,17 +68,6 @@
         right: 20px;
         text-align: center;
     }
-
-    #header-top{
-        font-size: 18px;
-        height: 50px;
-        left: 0;
-        line-height: 50px;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999;
-    }
     
     #div-loading {
         left: 0;
@@ -151,21 +140,6 @@
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: left;
-    }
-
-    .div-menu-logo a {
-        border-left: 1px solid #ccc;
-        color: #333;
-        display: inline-block;
-        float: left;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        width: 50px;
-    }
-
-    .div-menu-logo a img{
-        height: 25px;
     }
 
     .float-right {
@@ -245,71 +219,6 @@
     .menu-inline li a {
         border: none !important;
         text-align: center !important;
-    }
-  
-    .menu-main-trigger {
-        height:50px;
-        line-height: 50px;
-    }
-
-    .menu-main-trigger img{
-        margin-top:10px;
-    }
-
-    .nav-logo {
-        display: inline-block;
-        line-height: 50px;
-        padding-left: 20px;
-    }
-
-    .nav-logo img {
-        line-height: 50px;
-        margin-top: 2px;
-        overflow: hidden;
-        height: 45px;
-        width: auto;
-    }
-
-    .navbar .nabar-fixed-top .cf{
-        border-width:0 0 1px;
-        top: 0;
-    }
-
-    .navbar-fixed-top{     
-        border-width:0 0 1px;
-        left: 0;
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 1030;
-    }
-
-    .navbar{
-        position: relative;
-        height:50px;
-        line-height: 50px;
-        min-height: 50px;
-        margin-bottom: 20px;
-        background-color: rgba(255,255,255,0.7) !important;
-        border-color: #080808; 
-        border-bottom: 1px solid #ccc;
-    }
-
-    .navbar ul{
-        display: inline-block;
-        float: left;
-        height: 50px;
-        line-height: 50px;
-        margin: 0px;
-        padding: 0px;
-        padding-left: 20px;
-    }
-
-    .navbar ul li{
-        border-right-width: 1px;
-        float: left;
-        list-style: none;
-        margin: 0px 20px 0px 0px;
     }
         
     /*

@@ -29,6 +29,7 @@
     });
 
     $(function(){
+        //gotop條件
         $("#gotop").click(function(){
             jQuery("html,body").animate({
                 scrollTop:0
@@ -45,6 +46,7 @@
 
     });
 
+    //點選選單觸發事件
     $(".menu-main-trigger").click(function() {
         $("#menu-main").css({
             'z-index': 5555
@@ -73,6 +75,7 @@
         }
     });
 
+    //sleep函數
     function sleep(milliseconds) {
       var start = new Date().getTime();
       for (var i = 0; i < 1e7; i++) {
@@ -82,6 +85,7 @@
       }
     };
     
+    //當網站load完成將loding的div隱藏
     $(window).load(function(){
         $("#div-loading").fadeOut("slow");
     });

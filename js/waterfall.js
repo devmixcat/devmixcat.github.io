@@ -1,10 +1,14 @@
-// 超升级版（列数和每一列的宽度、元素块之间的边距为不定值，兼容IE6~8，实现响应式布局）
 var waterfallParent = document.getElementById("waterfall");
 var flowItems = getClassName(waterfallParent, "flow");
-// 声明瀑布流浮动参数
-// parent：瀑布流包裹容器，类型为DOM对象；floowItems：瀑布流布局子元素组，类型为DOM对象数组；pin：列数，类型为int；
-// width：每个瀑布流布局元素的宽度，类型为int；horizontalMargin：元素块之间的水平间距，类型为int；
-// verticalMargin：元素块之间的垂直间距，类型为int；
+// 瀑布流參數
+// parent：瀑布流包裹容器，類型為DOM對象；
+// floowItems：瀑布流布局子元素组，類型為DOM對象數組；
+// pin：列數，類型為inDOM對象；
+// floowItems：瀑布流布局子元素组，類型為DOM對象數組；
+// pin：列數，類型為int；
+// width：每個瀑布流布局元素的寬度，類型為int；
+// horizontalMargin：元素塊之間的水平間距，類型為int；
+// verticalMargin：元素塊之間的垂直間距，類型為int；
 var currentFlow = {
     parent: waterfallParent,
     flowItems: flowItems,
@@ -13,7 +17,7 @@ var currentFlow = {
     horizontalMargin: 15,
     verticalMargin: 15
 };
-// 声明响应式的响应断点
+// 聲明響應式的響應斷點
 var deviceWidth = {
     D: 1200,
     C: 960,
@@ -25,7 +29,7 @@ window.onresize = responseFlow;
 responseFlow();
 function responseFlow() {
     var deviceW;
-    // 判断当前的设备屏幕宽度
+    // 判斷當前的設備螢幕寬度
     function checkDeviceW() {
         var screenW = document.documentElement.offsetWidth || document.body.offsetWidth;
         waterfallParent.style.width = screenW; 
@@ -41,7 +45,7 @@ function responseFlow() {
         }
     }
     checkDeviceW();
-    // 修改不同响应下瀑布流布局的列数
+    // 修改不同響應下瀑布流布局的列數
     switch(deviceW) {
         case "A":
             currentFlow.pin = 1;
@@ -59,31 +63,31 @@ function responseFlow() {
             console.log("#currentFlow.pin:"+currentFlow.pin);
             break;
     }
-    // 瀑布流重绘
+    // 瀑布流重繪
     waterfall(currentFlow);
 }
-// 其中flow是一个对象，分别包含如下键值：
-// pin：列数，类型为int；
+// 其中flow是一个对象，分别包含如下鍵值：
+// pin：列數，類型為int；
 function waterfall(flow) {
-    // 声明瀑布流中每一列高度的数组pin[]
+    // 聲明瀑布流中每一列高度的數组pin[]
     var pin = new Array(flow.pin);
-    // 瀑布流框块数组
+    // 瀑布流框塊數组
     var flowItems = flow.flowItems;
-    // 声明每一列高度的初始值
+    // 聲明每一列高度的初始值
     for(var i = 0, pinLen = pin.length; i < pinLen; i++) {
         pin[i] = flowItems[i].offsetTop + flowItems[i].offsetHeight;
     }
-    // 循环瀑布流元素的高度
+    // 循環瀑布流元素的高度
     for(var i = 0, len = flowItems.length; i < len; i++) {
         if(flow.width) {
             flowItems[i].style.width = flow.width + "px";
         }
         if(i >= flow.pin) {
-            // 获取pin数组中的最小值
+            // 獲取pin數組中的最小值
             var minH = Math.min.apply(null, pin);
-            // 获取高度数组中最小高度的索引
+            // 獲取高度数组中最小高度的索引
             var minHItem = pin.indexOf(minH);
-            // 把当前元素在视觉上置于最小高度的一列
+            // 把當前元素在視覺上置于最小高度的一列
             flowItems[i].style.left = minHItem * (flow.width + flow.horizontalMargin) + "px";
             flowItems[i].style.top = minH + flow.verticalMargin + "px";
             // 重置列的高度
@@ -93,23 +97,23 @@ function waterfall(flow) {
             flowItems[i].style.left = (i % flow.pin) * (flow.width + flow.horizontalMargin) + "px";
         }
     }
-    // 计算瀑布流容器的宽度
+    // 計算瀑布流容器的寬度
     flow.parent.style.width = flow.pin * flow.width + (flow.pin - 1) * flow.horizontalMargin + "px";
 }
-// 获取className的元素集合
-// 参数：obj指父元素；oClassName为元素的class属性值
+// 獲取className的元素集合
+// 參數：obj指父元素；oClassName為元素的class属性值
 function getClassName(obj, oClassName) {
-    // IE9+及标准浏览器可以直接使用getElementsByClassName()获取className元素集合
+    // IE9+及標準瀏覽器可以直接使用getElementsByClassName()獲取className元素集合
     if(document.getElementsByClassName) {
         return obj.getElementsByClassName(oClassName);
     }else {
-        // classNameArr用来装载class属性值为oClassName的元素；
+        // classNameArr用來裝載class属性值為oClassName的元素；
         var classNameArr = [];
-        // 获取obj的直接子元素
+        // 獲取obj的直接子元素
         var objChild = obj.children || obj.childNodes;
-        // 遍历obj元素，获取class属性值为oClassName的元素列表
+        // 遍歷obj元素，獲取class属性值為oClassName的元素列表
         for(var i = 0; i < objChild.length; i++) {
-            // 判断obj子元素的class属性值中是否含有oClassName
+            // 判斷obj子元素的class属性值中是否含有oClassName
             if( hasClassName(objChild[i], oClassName) ) {
                 classNameArr.push(objChild[i]);
             }
@@ -117,26 +121,26 @@ function getClassName(obj, oClassName) {
         return classNameArr;
     }
 }
-// Array.indexOf()函数的兼容性重写
+// Array.indexOf()函数的兼容性重寫
 if (!Array.prototype.indexOf) {
     Array.prototype.indexOf = function(ele) {
-        // 获取数组长度
+        // 獲取數组長度
         var len = this.length;
-        // 检查值为数字的第二个参数是否存在，默认值为0
+        // 檢查值為數字的第二個參數是否存在，默認執為0
         var fromIndex = Number(arguments[1]) || 0;
-        // 当第二个参数小于0时，为倒序查找，相当于查找索引值为该索引加上数组长度后的值
+        // 當第二個參數小於0時，為倒序查找，相當於查找索引值為該索引加上數组長度後的值
         if(fromIndex < 0) {
             fromIndex += len;
         }
-        // 从fromIndex起循环数组
+        // 從fromIndex起循循環數組
         while(fromIndex < len) {
-            // 检查fromIndex是否存在且对应的数组元素是否等于ele
+            // 檢查fromIndex是否存在且對應的數組元素是否等於ele
             if(fromIndex in this && this[fromIndex] === ele) {
                 return fromIndex;
             }
             fromIndex++;
         }
-        // 当数组长度为0时返回不存在的信号：-1
+        //當數組長度為0時返回不存在的信號：-1
         if (len === 0) {
             return -1;
         }
@@ -147,11 +151,15 @@ $(document).ready(function(){
 	$(".flowItem").find("h2").hide();
     $(".flowItem").find("p").hide();
     $(".flowItem").mouseover(function(){
+        $(this).css("background","#fff");
+        $(this).find("img").fadeOut("slow");
         $(this).find("h2").fadeIn("slow");
         $(this).find("p").fadeIn("slow");
     });
 
     $(".flowItem").mouseleave(function(){
+        $(this).css("background","#f9f9f9");
+        $(this).find("img").fadeIn("slow");
         $(this).find("h2").fadeOut("slow");
         $(this).find("p").fadeOut("slow");
     });
