@@ -9,7 +9,6 @@
         width: 100%;
         z-index: 999;
     }
-    
     .div-menu-logo a {
         border-left: 1px solid #ccc;
         color: #333;
@@ -17,6 +16,18 @@
         float: left;
         text-align: center;
         width: 40px;
+    }
+    #div-nav-center{
+        position: fixed;
+        top:0px;
+        left:45%;
+    }
+    #div-nav-center p{
+        font-weight: bold;
+        line-height: 40px;
+        height:40px;
+        margin:0px;
+        padding:0px;
     }
 
     .menu-main-trigger img{
@@ -27,7 +38,7 @@
     .nav-logo {
         display: inline-block;
         line-height: 30px;
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .nav-logo img {
