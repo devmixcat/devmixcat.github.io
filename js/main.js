@@ -91,7 +91,7 @@
     function x2menu(){
         $(".b1").css({"transform":"translateY(5px) rotate(45deg)","width":"18px"});
         $(".b3").css({"transform":"translateY(-5px) rotate(-45deg)","width":"18px"});
-        $(".b2").css({"left":"50px","width":"0px"});
+        $(".b2").css({"left":"15px","width":"0px"});
         $(".b").css({"background":"transparent"});
     }
     
