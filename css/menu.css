@@ -1,0 +1,37 @@
+
+	.b{
+	  position:absolute;
+	  //top:50px;
+	  //left:160px;
+	  width:40px;
+	  height:40px;
+	  //border-radius:50%;
+	  background:transparent;
+	  transition:.2s;
+	  cursor:pointer;
+	}
+	.b i{
+	  position:absolute;
+	  display:block;
+	  width:15px;
+	  height:2px;
+	  background:#000;
+	  left:13px;
+	  border-radius:2px;
+	  transition:.2s;
+	}
+	.b1{
+	  top:13px;
+	}
+	.b2{
+	  top:18px;
+	}
+	.b3{
+	  top:23px;
+	}
+	
+	.b:hover{
+	  //background:#c00;
+	}
+	
+	

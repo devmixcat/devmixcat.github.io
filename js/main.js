@@ -53,9 +53,12 @@
         });
         //$("#menu-main").fadeToggle("slow");
         if ($("#menu-main").is(":visible")) {
+    $(".b").css({"background":"#f9f9f9"});
+            menu2x();
             $("#menu-main").fadeOut("slow");
             $("#slides").fadeIn();
         } else {
+            x2menu();
             $("#slides").fadeOut("slow");
             $("#menu-main").fadeIn("slow");
         }
@@ -63,27 +66,34 @@
 
     $("#menu-main").click(function(evt) {
         if ((!$(evt.target).hasClass('main-nav')) && ($(evt.target).attr('class') != undefined)) {
-
             //$("#menu-main").fadeToggle("slow");
             if ($("#menu-main").is(":visible")) {
+                menu2x();
                 $("#menu-main").fadeOut("slow");
                 $("#slides").fadeIn();
             } else {
+                x2menu();
                 $("#slides").fadeOut("slow");
                 $("#menu-main").fadeIn("slow");
             }
+           
         }
+
     });
 
-    //sleep函數
-    function sleep(milliseconds) {
-      var start = new Date().getTime();
-      for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds){
-          break;
-        }
-      }
-    };
+    function menu2x(){
+        $(".b1").css({"transform":"translateY(0px) rotate(0deg)","width":"15px"});
+        $(".b3").css({"transform":"translateY(0px) rotate(0deg)","width":"15px"});
+        $(".b2").css({"left":"13px","width":"15px"});
+        $(".b").css({"background":"transparent"});
+    }
+
+    function x2menu(){
+        $(".b1").css({"transform":"translateY(5px) rotate(45deg)","width":"18px"});
+        $(".b3").css({"transform":"translateY(-5px) rotate(-45deg)","width":"18px"});
+        $(".b2").css({"left":"50px","width":"0px"});
+        $(".b").css({"background":"transparent"});
+    }
     
     //當網站load完成將loding的div隱藏
     $(window).load(function(){

@@ -1,9 +1,9 @@
 
     #header-top{
         font-size: 18px;
-        height: 35px;
+        height: 40px;
         left: 0;
-        line-height: 35px;
+        line-height: 40px;
         position: fixed;
         top: 0;
         width: 100%;
@@ -16,12 +16,12 @@
         display: inline-block;
         float: left;
         text-align: center;
-        width: 30px;
+        width: 40px;
     }
 
     .menu-main-trigger img{
-        height: 20px;
-        line-height:35px;
+        height: 40px;
+        line-height:40px;
     }
 
     .nav-logo {
@@ -31,10 +31,10 @@
     }
 
     .nav-logo img {
-        line-height: 35px;
+        line-height: 40px;
         margin-top: 2px;
         overflow: hidden;
-        height: 35px;
+        height: 40px;
         width: auto;
     }
 
@@ -54,9 +54,9 @@
 
     .navbar{
         position: relative;
-        height:35px;
-        line-height: 35px;
-        min-height: 35px;
+        height:40px;
+        line-height: 40px;
+        min-height: 40px;
         background-color: rgba(255,255,255,0.7) !important;
         border-color: #080808; 
         border-bottom: 1px solid #ccc;
@@ -78,8 +78,8 @@
     }
 
     .menu-main-trigger {
-        height:35px;
-        line-height: 35px;
+        height:40px;
+        line-height: 40px;
     }
 
     .menu-main-trigger img{

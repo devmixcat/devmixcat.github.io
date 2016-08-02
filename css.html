@@ -1,0 +1,103 @@
+<html>
+<head>
+	<style>
+	.logo{
+		top: 500px;
+		position:absolute;
+		width:100px;
+		height:50px;
+		background: #fff;
+	}
+	.logo i {
+	    position: absolute;
+	    display: block;
+	    //background: #000;
+	    /* width: 206.1552831px; */
+	    height: 2px;
+	    transition: .2s;
+	}
+
+	.i1 {
+	    background: black;
+	    top: 27px;
+	    left: 14px;
+	    width: 51px;
+	    transform: rotate(40deg);
+	}
+	.i2 {
+		background: black;
+	    top: 20px;
+	    left: 10px;
+	    width: 64px;
+	    transform: rotate(-36deg);
+	}
+	.o1{
+	   position: absolute;
+	   top:10px;
+	   left:0px;
+	   background: black;
+	   //border-style:#000 3px solid;
+	   height:30px;
+	   width: 30px;
+	   border-radius: 30px 24px 30px 24px;
+	   transform: rotate(-15deg);
+	}
+	.o3{
+	   position: absolute;
+	   top:12px;
+	   left:2px;
+	   background: white;
+	   //border-style:#000 3px solid;
+	   height:26px;
+	   width: 26px;
+	   border-radius: 26px 10px 26px 10px;
+	   transform: rotate(-15deg);
+	}
+	.o2{
+	   position: absolute;
+	   top:0px;
+	   left:50px;
+	   background: black;
+	   height: 50px;
+	   width: 50px;
+	   border-radius: 50%;
+	}
+	.o4{
+	   position: absolute;
+	   top:2px;
+	   left:52px;
+	   background: white;
+	   height: 46px;
+	   width: 46px;
+	   border-radius: 50%;
+	
+	}
+
+    .logo:hover .i1{
+	  left:15px;
+	  width:206.1552831px;
+	  transform: rotate(45deg);
+	}
+
+	.logo:hover .i2{
+	  left:15px;
+	  width:206.1552831px;
+	  transform:rotate(-45deg);
+	}
+	
+	.b:hover{
+	  background:#c00;
+	}
+	</style>
+</head>
+<body>
+<div class="logo">
+	<i class="i1"></i>
+	<i class="i2"></i>
+	<div class="o1"></div>
+	<div class="o2"></div>
+	<div class="o3"></div>
+	<div class="o4"></div>
+</div>
+</body>
+</html>
