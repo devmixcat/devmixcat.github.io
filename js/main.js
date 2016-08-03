@@ -29,6 +29,7 @@
     });
 
     $(function(){
+        $("img.lazy").lazyload();
         //gotop條件
         $("#gotop").click(function(){
             jQuery("html,body").animate({
