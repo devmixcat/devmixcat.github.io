@@ -8,7 +8,7 @@
         top: 0;
         width: 100%;
         z-index: 999;
-        box-shadow:1px 0px 10px 1px rgba(20%,20%,40%,0.5);
+        box-shadow:1px 0px 8px 1px rgba(20%,20%,40%,0.3);
     }
     .div-menu-logo a {
         border-left: 1px solid #ccc;
