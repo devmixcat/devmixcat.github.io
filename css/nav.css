@@ -18,16 +18,34 @@
         width: 40px;
     }
     #div-nav-center{
-        position: fixed;
-        top:0px;
-        left:45%;
-    }
-    #div-nav-center p{
-        font-style: italic;
+        position: absolute;
         line-height: 40px;
         height:40px;
-        margin:0px;
-        padding:0px;
+        margin: 0px;
+        margin-left: 10px;
+        padding: 0px;
+
+    }
+   
+    #div-nav-center a{
+        vertical-align : middle;
+        font-style: italic;
+        display: inline-block;
+        line-height: 40px;
+        height:40px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #div-nav-center span{
+        vertical-align : middle;
+        font-style: italic;
+        display: inline-block;
+        line-height: 40px;
+        height:40px;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 1px;
     }
 
     .menu-main-trigger img{
@@ -37,13 +55,13 @@
 
     .nav-logo {
         display: inline-block;
-        line-height: 30px;
-        padding-left: 15px;
+        line-height: 40px;
+        width: auto;
+        //padding-left: 15px;
     }
 
     .nav-logo img {
         line-height: 40px;
-        margin-top: 2px;
         overflow: hidden;
         height: 40px;
         width: auto;
