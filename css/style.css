@@ -300,4 +300,7 @@
         margin-top: 80px;
         padding:0px;
     }
+    #content-title p{
+        line-height: 21px;
+    }
 
