@@ -14,8 +14,8 @@
     body{
         background-color: #ffffff;
         color: #333333;
-        //font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-        font-family: "Circular","Helvetica","Arial","sans-serif";
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        //font-family: "Circular","Helvetica","Arial","sans-serif";
         height: 100%;
         margin: 0;
         padding: 0;           
@@ -60,13 +60,12 @@
         cursor: pointer;
         color: white;
         display: none;
-        font-size: 20px;
-        height:24px;
+        font-size: 15px;
+        height:20px;
         line-height: 23px;
-        padding: 0 20px;
-        padding-top: 4px; 
+        padding: 2px 20px;
         position: fixed;
-        right: 20px;
+        right: 25px;
         text-align: center;
     }
     
