@@ -40,8 +40,12 @@
         $(window).scroll(function() {
             if ( $(this).scrollTop() > 300){
                 $("#gotop").fadeIn("fast");
+                if(!$("#menu-main").is(":visible")){
+                    $("#header-top").fadeOut("fast");
+                }
             } else {
                 $('#gotop').stop().fadeOut("fast");
+                $("#header-top").fadeIn("fast");
             }
         });
 
@@ -71,7 +75,7 @@
             if ($("#menu-main").is(":visible")) {
                 menu2x();
                 $("#menu-main").fadeOut("slow");
-                $("#slides").fadeIn();
+                $("#slides").fadeIn("slow");
             } else {
                 x2menu();
                 $("#slides").fadeOut("slow");
