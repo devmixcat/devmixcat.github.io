@@ -144,10 +144,13 @@
     }
 
     .img-type-w{
-        width: 1013px;
+        width: 100%;
         height: 676px;
     }
-
+    .img-type-f{
+        width:1440px;
+        height:540px;
+    }
     .img-type-h{
         
     }
