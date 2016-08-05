@@ -29,7 +29,7 @@
     });
 
     $(function(){
-        $("img.lazy").lazyload({effect : "fadeIn",placeholder : "./img/logo/load.gif"});
+        $("img.lazy").lazyload({effect : "fadeIn",placeholder : "../img/logo/load.gif"});
         //gotop條件
         $("#gotop").click(function(){
             jQuery("html,body").animate({
