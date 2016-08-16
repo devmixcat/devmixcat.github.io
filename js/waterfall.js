@@ -99,18 +99,22 @@ function waterfall(flow) {
     }
     // 計算瀑布流容器的寬度
     flow.parent.style.width = flow.pin * flow.width + (flow.pin - 1) * flow.horizontalMargin + "px";
+    $("footer").css("position","absolute");
+
 }
 // 獲取className的元素集合
 // 參數：obj指父元素；oClassName為元素的class属性值
 function getClassName(obj, oClassName) {
     // IE9+及標準瀏覽器可以直接使用getElementsByClassName()獲取className元素集合
     if(document.getElementsByClassName) {
+        console.log("@@:"+obj.getElementsByClassName(oClassName));
         return obj.getElementsByClassName(oClassName);
     }else {
         // classNameArr用來裝載class属性值為oClassName的元素；
         var classNameArr = [];
         // 獲取obj的直接子元素
         var objChild = obj.children || obj.childNodes;
+        //alert("@objChild:"+objChild);
         // 遍歷obj元素，獲取class属性值為oClassName的元素列表
         for(var i = 0; i < objChild.length; i++) {
             // 判斷obj子元素的class属性值中是否含有oClassName
@@ -118,6 +122,7 @@ function getClassName(obj, oClassName) {
                 classNameArr.push(objChild[i]);
             }
         }
+        //alert("@calssNameArr:"+classNameArr);
         return classNameArr;
     }
 }
@@ -152,14 +157,14 @@ $(document).ready(function(){
     $(".flowItem").find("p").hide();
     $(".flowItem").mouseover(function(){
         $(this).css("background","#fff");
-        $(this).find("img").fadeOut("slow");
+        $(this).find("img").fadeOut("fast");
         $(this).find("h2").fadeIn("slow");
         $(this).find("p").fadeIn("slow");
     });
 
     $(".flowItem").mouseleave(function(){
         $(this).css("background","#f9f9f9");
-        $(this).find("img").fadeIn("slow");
+        $(this).find("img").fadeIn("fast");
         $(this).find("h2").fadeOut("slow");
         $(this).find("p").fadeOut("slow");
     });
