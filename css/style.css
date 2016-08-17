@@ -224,6 +224,9 @@
         border: none !important;
         text-align: center !important;
     }
+    .menu-inline li img{
+        width: 30px;
+    }
         
     /*
     .pull-right{
@@ -262,7 +265,7 @@
         border-top: 1px solid #ededed;
         bottom: 0px;
         left: 0px;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         font-size: 10px;
         line-height: 15px;
         letter-spacing: .05em;
@@ -283,6 +286,12 @@
     }
     footer a,footer address{
         text-decoration:underline !important;
+        color: black;
+        font-weight: 700;
+    }
+    footer p{
+        margin:0px;
+        padding:0px;
         color: black;
         font-weight: 700;
     }

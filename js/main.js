@@ -8,6 +8,16 @@
                 $(this).css("background-color", "transparent");
                 $(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
             });
+            
+            $(".menu-inline li a").mouseover(function(){
+                $(this).css("background-color", "#ededed");
+                //$(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
+            });
+
+            $(".menu-inline li a").mouseleave(function(){
+                $(this).css("background-color", "transparent");
+                //$(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
+            });
 
             $(".div-menu-logo").hover(
                 function() {

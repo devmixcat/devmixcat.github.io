@@ -33,7 +33,7 @@ function responseFlow() {
     function checkDeviceW() {
         var screenW = document.documentElement.offsetWidth || document.body.offsetWidth;
         waterfallParent.style.width = screenW; 
-        console.log("#screenW:"+screenW);
+        //console.log("#screenW:"+screenW);
         if(screenW >= deviceWidth.A && screenW < deviceWidth.B) {
             deviceW = "A";
         }else if(screenW >= deviceWidth.B && screenW < deviceWidth.C) {
@@ -57,10 +57,10 @@ function responseFlow() {
             currentFlow.pin = 3;
             break;
         case "D":
-        	console.log("#currentFlow.parent.offsetWidth:"+currentFlow.parent.offsetWidth);
-        	console.log("#currentFlow.width:"+currentFlow.width);
+        	//console.log("#currentFlow.parent.offsetWidth:"+currentFlow.parent.offsetWidth);
+        	//console.log("#currentFlow.width:"+currentFlow.width);
             currentFlow.pin = Math.floor(currentFlow.parent.offsetWidth / currentFlow.width);
-            console.log("#currentFlow.pin:"+currentFlow.pin);
+            //console.log("#currentFlow.pin:"+currentFlow.pin);
             break;
     }
     // 瀑布流重繪
@@ -100,7 +100,6 @@ function waterfall(flow) {
     // 計算瀑布流容器的寬度
     flow.parent.style.width = flow.pin * flow.width + (flow.pin - 1) * flow.horizontalMargin + "px";
     $("footer").css("position","absolute");
-
 }
 // 獲取className的元素集合
 // 參數：obj指父元素；oClassName為元素的class属性值
