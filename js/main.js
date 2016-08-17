@@ -1,12 +1,14 @@
     $(document).ready(function(){
             $(".main-nav li a").mouseover(function(){
                 $(this).css("background-color", "#ededed");
-                $(this).find("span").animate({"margin-left":"20px"},"slow").css("color", "black");
+                //$(this).find("span").animate({"margin-left":"20px"},"slow").css("color", "black");
+                $(this).find("span").fadeIn("fast").css("color","black");
             });
 
             $(".main-nav li a").mouseleave(function(){
                 $(this).css("background-color", "transparent");
-                $(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
+                //$(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
+                 $(this).find("span").fadeOut("fast").css("color","black");
             });
             
             $(".menu-inline li a").mouseover(function(){
@@ -112,6 +114,7 @@
     
     //當網站load完成將loding的div隱藏
     $(window).load(function(){
+        $("#div-loading2").slideToggle("slow");
         $("#div-loading").fadeOut("slow");
     });
     

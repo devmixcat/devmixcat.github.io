@@ -81,7 +81,7 @@
         background: rgba(256, 256, 256, 0.98);
     }
     
-    #loading {
+    #loading{
         position: fixed;
         width:200px;
         height:200px;
@@ -92,7 +92,7 @@
         margin-left: -100px;
     }
 
-    #loading img {
+    #loading img{
         height:200px;
         width:200px;
     }
