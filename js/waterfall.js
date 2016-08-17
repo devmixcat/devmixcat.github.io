@@ -156,15 +156,15 @@ $(document).ready(function(){
     $(".flowItem").find("p").hide();
     $(".flowItem").mouseover(function(){
         $(this).css("background","#fff");
-        $(this).find("img").fadeOut("fast");
-        $(this).find("h2").fadeIn("fast");
-        $(this).find("p").fadeIn("fast");
+        $(this).find("img").fadeOut("slow");
+        $(this).find("h2").fadeIn("slow");
+        $(this).find("p").fadeIn("slow");
     });
 
     $(".flowItem").mouseleave(function(){
         $(this).css("background","#f9f9f9");
-        $(this).find("img").fadeIn("fast");
-        $(this).find("h2").fadeOut("fast");
-        $(this).find("p").fadeOut("fast");
+        $(this).find("img").fadeIn("slow");
+        $(this).find("h2").fadeOut("slow");
+        $(this).find("p").fadeOut("slow");
     });
  });
