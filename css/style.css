@@ -322,3 +322,43 @@
         line-height: 21px;
     }
 
+     #main-content-about{
+        position: relative;
+        width: 1013px;
+        height:auto;
+        margin: 0px auto;
+        margin-top:30px;
+        margin-bottom: 80px;
+    }
+    #main-content-about p {
+        margin: 0px auto;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        //text-align: left;
+    }
+    .content-about{
+        margin: 0px auto;
+        padding-top:0px !important;
+    }
+    .content-left{
+        position: absolute;
+        width: 500px;
+        float:left;
+        //padding:0px;
+
+    }
+    .content-right{
+        width:500px;
+        margin-left: 510px;
+        //float:right;
+        //padding: 0px;
+    }
+    .font-b{
+        font-weight: bold;
+        padding-top :5px;
+        padding-bottom: 0px !important;
+    }
+

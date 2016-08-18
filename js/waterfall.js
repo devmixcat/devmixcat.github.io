@@ -99,7 +99,7 @@ function waterfall(flow) {
     }
     // 計算瀑布流容器的寬度
     flow.parent.style.width = flow.pin * flow.width + (flow.pin - 1) * flow.horizontalMargin + "px";
-    $("footer").css("position","fixed");
+    
 }
 // 獲取className的元素集合
 // 參數：obj指父元素；oClassName為元素的class属性值
