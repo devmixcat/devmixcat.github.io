@@ -99,7 +99,7 @@ function waterfall(flow) {
     }
     // 計算瀑布流容器的寬度
     flow.parent.style.width = flow.pin * flow.width + (flow.pin - 1) * flow.horizontalMargin + "px";
-    $("footer").css("position","absolute");
+    $("footer").css("position","fixed");
 }
 // 獲取className的元素集合
 // 參數：obj指父元素；oClassName為元素的class属性值
@@ -154,17 +154,21 @@ if (!Array.prototype.indexOf) {
 $(document).ready(function(){
 	$(".flowItem").find("h2").hide();
     $(".flowItem").find("p").hide();
-    $(".flowItem").mouseover(function(){
+    $(".flowItem").mouseenter(function(){
+        console.log("000")
         $(this).css("background","#fff");
-        $(this).find("img").fadeOut("slow");
-        $(this).find("h2").fadeIn("slow");
-        $(this).find("p").fadeIn("slow");
+        $(this).find("img").hide();
+        $(this).find("h2").show();
+        $(this).find("p").show();
+        console.log("001");
     });
 
     $(".flowItem").mouseleave(function(){
+        console.log("010");
         $(this).css("background","#f9f9f9");
         $(this).find("img").fadeIn("slow");
-        $(this).find("h2").fadeOut("slow");
-        $(this).find("p").fadeOut("slow");
+        $(this).find("h2").hide();
+        $(this).find("p").hide();
+        console.log("011");
     });
  });

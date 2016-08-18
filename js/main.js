@@ -39,6 +39,8 @@
     });
 
     $(function(){
+        var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+        console.log(scrollBottom);
         $("img.lazy").lazyload({effect : "fadeIn",placeholder : "../img/logo/load.gif"});
         //gotop條件
         $("#gotop").click(function(){
@@ -57,6 +59,8 @@
                 $('#gotop').stop().fadeOut("fast");
                 $("#header-top").fadeIn("fast");
             }
+
+           // if( $(this).scrollTop()
         });
 
     });

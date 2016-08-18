@@ -270,7 +270,8 @@
         line-height: 15px;
         letter-spacing: .05em;
         z-index: 300;
-        position: relative;
+        //position: relative;
+        position: fixed;
     }
     footer li, footer address{
         display: inline-block;
