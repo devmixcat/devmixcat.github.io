@@ -38,10 +38,9 @@
             
     });
 
-    $(function(){
-        var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
-        console.log(scrollBottom);
+    $(function(){  
         $("img.lazy").lazyload({effect : "fadeIn",placeholder : "../img/logo/load.gif"});
+        $("footer").hide();
         //gotop條件
         $("#gotop").click(function(){
             jQuery("html,body").animate({
@@ -59,7 +58,14 @@
                 $('#gotop').stop().fadeOut("fast");
                 $("#header-top").fadeIn("fast");
             }
-
+            var h=$(document).height() -( $(window).height()+$(document).scrollTop() );
+            console.log("##:"+h);
+            if( $(document).height() -( $(window).height()+$(document).scrollTop() ) < 80 )
+             {
+                $("footer").fadeIn("slow");
+             }else{
+                $("footer").fadeOut("slow");
+             }
            // if( $(this).scrollTop()
         });
 
