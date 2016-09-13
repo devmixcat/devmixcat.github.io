@@ -25,7 +25,36 @@
                     $(".div-menu-logo").fadeIn("slow");
                 }
             );
-           
+            
+
+            $("#in-content-main-000").mouseover(function () {
+                $("#in-content-main-000").removeClass("grayscale");
+            });
+            $("#in-content-main-000").mouseout(function () {
+                $("#in-content-main-000").addClass("grayscale").fadeTo(400, 1);
+            });
+
+             $("#in-content-main-001").mouseover(function () {
+                $("#in-content-main-001").removeClass("grayscale");
+            });
+            $("#in-content-main-001").mouseout(function () {
+                $("#in-content-main-001").addClass("grayscale").fadeTo(400, 1);
+            });
+
+             $("#in-content-main-002").mouseover(function () {
+                $("#in-content-main-002").removeClass("grayscale");
+            });
+            $("#in-content-main-002").mouseout(function () {
+                $("#in-content-main-002").addClass("grayscale").fadeTo(400, 1);
+            });
+
+             $("#in-content-main-003").mouseover(function () {
+                $("#in-content-main-003").removeClass("grayscale");
+            });
+            $("#in-content-main-003").mouseout(function () {
+                $("#in-content-main-003").addClass("grayscale").fadeTo(400, 1);
+            });
+
             $(".div-menu-logo").mouseleave(function(){
                 $(this).css("background","none");
             });
@@ -58,14 +87,15 @@
                 $('#gotop').stop().fadeOut("fast");
                 $("#header-top").fadeIn("fast");
             }
-            var h=$(document).height() -( $(window).height()+$(document).scrollTop() );
+            
+            var h = $(document).height() -( $(window).height()+$(document).scrollTop() );
             console.log("##:"+h);
-            if( $(document).height() -( $(window).height()+$(document).scrollTop() ) < 80 )
-             {
-                $("footer").fadeIn("slow");
-             }else{
-                $("footer").fadeOut("slow");
-             }
+            if( h < 100 )
+            {
+                $("footer").fadeIn("fast");
+            }else{
+                $("footer").fadeOut("fast");
+            }
            // if( $(this).scrollTop()
         });
 
