@@ -346,25 +346,47 @@
     .in-content-main a{
         color:#ebebeb;
     }
+
+    
     #in-content-main-000{
         background-image: url('../img/pics/cat001.jpg');
         background-repeat: no-repeat;
-        //opacity: 0.9;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; 
     }
     #in-content-main-001{
          background-image: url('../img/pics/001.jpg');
          background-repeat: no-repeat;
-         //opacity: 0.9;
+         -webkit-filter: grayscale(100%);
+         -moz-filter: grayscale(100%);
+         -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+         filter: grayscale(100%);
+         filter: gray; 
     }
     #in-content-main-002{
          background-image: url('../img/pics/003.jpg');
          background-repeat: no-repeat;
-         //opacity: 0.9;
+         -webkit-filter: grayscale(100%);
+         -moz-filter: grayscale(100%);
+         -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+         filter: grayscale(100%);
+         filter: gray; 
     }
     #in-content-main-003{
          background-image: url('../img/pics/004.jpg');
          background-repeat: no-repeat;
-         //opacity: 0.9;
+         -webkit-filter: grayscale(100%);
+         -moz-filter: grayscale(100%);
+         -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+         filter: grayscale(100%);
+         filter: gray; 
          
     }
     #in-content-main-004{
@@ -423,5 +445,14 @@
         font-weight: bold;
         padding-top :5px;
         padding-bottom: 0px !important;
+    }
+    #in-content-main-000:hover, #in-content-main-001:hover, #in-content-main-002:hover
+    , #in-content-main-003:hover {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+        filter: gray; 
     }
 

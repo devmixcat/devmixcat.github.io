@@ -25,8 +25,8 @@
                     $(".div-menu-logo").fadeIn("slow");
                 }
             );
-            
 
+            /*
             $("#in-content-main-000").mouseover(function () {
                 $("#in-content-main-000").removeClass("grayscale");
             });
@@ -54,6 +54,7 @@
             $("#in-content-main-003").mouseout(function () {
                 $("#in-content-main-003").addClass("grayscale").fadeTo(400, 1);
             });
+            */
 
             $(".div-menu-logo").mouseleave(function(){
                 $(this).css("background","none");
@@ -76,7 +77,7 @@
                 scrollTop:0
             },1000);
         });
-
+         
         $(window).scroll(function() {
             if ( $(this).scrollTop() > 300){
                 $("#gotop").fadeIn("fast");
@@ -89,14 +90,35 @@
             }
             
             var h = $(document).height() -( $(window).height()+$(document).scrollTop() );
-            console.log("##:"+h);
+            //console.log("##:"+h);
             if( h < 100 )
             {
                 $("footer").fadeIn("fast");
             }else{
                 $("footer").fadeOut("fast");
             }
-           // if( $(this).scrollTop()
+           /*
+           console.log("scrolltop:"+$(this).scrollTop());
+           var getScrolltop = $(this).scrollTop();
+           if(0 < getScrolltop < 450){
+                $("#in-content-main-000").removeClass("grayscale");
+                 $("#in-content-main-001").addClass("grayscale").fadeTo(400, 1);
+                  $("#in-content-main-002").addClass("grayscale").fadeTo(400, 1);
+                   $("#in-content-main-003").addClass("grayscale").fadeTo(400, 1);
+
+           }
+           if(450 < getScrolltop < 950){
+                 $("#in-content-main-001").removeClass("grayscale");
+                 $("#in-content-main-000").addClass("grayscale").fadeTo(400, 1);
+                  $("#in-content-main-002").addClass("grayscale").fadeTo(400, 1);
+                   $("#in-content-main-003").addClass("grayscale").fadeTo(400, 1);
+            }
+            if(950 < getScrolltop < 1450){
+                 $("#in-content-main-002").removeClass("grayscale");
+                 $("#in-content-main-000").addClass("grayscale").fadeTo(400, 1);
+                  $("#in-content-main-001").addClass("grayscale").fadeTo(400, 1);
+                   $("#in-content-main-003").addClass("grayscale").fadeTo(400, 1);
+            } */
         });
 
     });

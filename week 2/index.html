@@ -1,0 +1,343 @@
+<html>
+<head>
+	<style>
+		body{
+			background-color: #000;
+			background-image: url("./bg-body.jpg");
+			background-repeat: no-repeat;
+		    background-position: center top;
+		    font-family: 'KomikaTextTightRegular', Arial, Helvetica, sans-serif;
+    		font-size: 1em;
+		}
+		a{
+			text-decoration: none;
+		}
+		#page{
+			margin: 0px auto;
+			width:960px;
+		}
+		#header{
+			width: 960px;
+		    height: 180px;
+		    float: left;
+		}
+		#header-content{
+			float:right;
+			width: 440px;
+			height: 105px;
+			background-image: url("./bg-search.png");
+  			background-repeat: no-repeat;
+		}
+		#header-content-search{
+			text-align: right;
+		    padding-top: 10px;
+		    height: 32px;
+		}
+		form{
+			margin: 0px;
+			padding:0px;
+
+		}
+		#header-content-search input{
+			vertical-align: middle;
+		}	
+		#header-content-search .search-text{
+			width: 160px;
+		    margin-right: 10px;
+		    padding: 6px 10px;
+		    color: #F2AA00;
+		    font-family: 'KomikaTextTightRegular',Arial, Helvetica, sans-serif;
+		    font-size: 14px;
+		    background-color: #280000;
+		    border: 1px solid #7C0000;
+		    -webkit-border-radius: 3px;
+		    -khtml-border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    border-radius: 3px;
+		}
+		#header-content-social{
+			padding-top:14px;
+			text-align: right;
+			color: #FFF;
+		    font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 15px;
+		    vertical-align: middle;
+		}
+		#header-logo{
+			width: 400px;
+			padding-top: 32px;
+			padding-left: 70px;
+		}
+		#content{
+			float: left;
+    		width: 960px;
+		}
+		#content-wrapper{
+		    float: left;
+		    width: 910px;
+		    padding-left: 10px;
+		    padding-right: 40px;
+		    padding-top: 10px;
+		}
+		#content-wrapper-content{
+			float: left;
+		    width: 890px;
+		    padding: 10px;
+		    background-color: #FFF;
+		    background-image: url("./content-page-curl.jpg");
+		    background-position: bottom right;
+		    background-repeat: no-repeat;
+		    -webkit-border-radius: 5px;
+		    -khtml-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    -webkit-border-bottom-right-radius: 0px;
+		    -khtml-border-radius-bottomright: 0px;
+		    -moz-border-radius-bottomright: 0px;
+		    border-bottom-right-radius: 0px;
+		}
+		.post{
+			float: left;
+		    width: 445px;
+		    height: 230px;
+		    margin-bottom: 20px;
+		}
+		.post h2{
+			position: relative;
+		    top: -70px;
+		    left: 0px;
+		    width: 300px;
+		    padding: 5px;
+		    padding-left: 10px;
+		    font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 18px;
+		    color: #680000;
+		    background-color: #F2AA00;
+		}
+		.post h2 a {
+		    color: #680000;
+		    text-decoration: none;
+		}
+		.post .metadata{
+		    position: relative;
+		    top: -85px;
+		    left: 0px;
+		    width: 250px;
+		    padding: 5px;
+		    padding-left: 10px;
+		    font-size: 13px;
+		    background-color: #FFF;
+		    border: 1px solid #FFB800;
+		}
+		.post .metadata a {
+		    color: #000;
+		    text-decoration: none;
+		}
+		.post-img{
+		    position: relative;
+		    top: 0px;
+		    left: 0px;
+		    border: 1px solid #FFB800;
+		}
+		.post .post-content{
+		 	position: relative;
+		    top: -290px;
+		    left: 230px;
+		    width: 210px;
+		    height: 220px;
+		    background-image: url("./bg-post-content.png");
+		    background-position: top left;
+		    background-repeat: no-repeat;
+		}
+		.post-1{
+		    width: 150px;
+		    height: 98px;
+		    overflow: hidden;
+		    padding-left: 35px;
+		    padding-top: 15px;
+		    text-align: right;
+		    font-size: 10px;
+		    color: #FFF;
+		}
+		.post .post-2 a {
+		    color: #787878;
+		    text-decoration: none;
+		}
+		.post-2{
+			width: 150px;
+		    margin-left: 35px;
+		    margin-top: 8px;
+		    padding-top: 4px;
+		    text-align: right;
+		    border-top: 1px solid #787878;
+		    font-family: Tahoma, Geneva, sans-serif;
+		    font-size: 10px;
+		    color: #787878;
+		}
+		.post-3{
+			width: 50px;
+		    margin-top: 37px;
+		    margin-left: 56px;
+		    text-align: center;
+		}
+		.post-3 a{
+			color:inherit;
+		}
+		.post-content .post-3 .number{
+			font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 14px;
+		    color: #FFF;
+		}
+	   .post-content .post-3 .comments{
+			font-size: 5px;
+    		color: #F2AA00;
+		}
+		#banner{
+			background-image: url("./bg-banner.jpg");
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="header-content">
+				<div id="header-content-search">
+					<form>
+						<input type="text" class="search-text" value="Looking for something?">
+						<input type="image" src="./search-btn.png">
+					</form>
+				</div>
+				<div id="header-content-social">
+					FOLLOW US
+					<a href="#"><img src="./twitter_16.png"></a>
+					<a href="#"><img src="./facebook_16.png"></a>
+					<a href="#"><img src="./technorati_16.png"></a>
+					<a href="#"><img src="./rss_16.png"></a>
+				</div>
+			</div>
+			<div id="header-logo">
+				<a href="#"><img src="./logo.png"></a>
+			</div>
+		</div>
+		<div id="content">
+			<div id="content-wrapper">
+				<div id="content-wrapper-content">
+					<div class="post">
+						<a href="#"><img src="./01.jpg" class="post-img"></a>
+						<h2><a href="#">Lorem Ipsum Post Title</a></h2>
+						<div class="metadata">
+							<a href="#">0001</a>,
+							<a href="#">0002</a>,
+							<a href="#">0003</a>,
+							<a href="#">0004</a>,
+							<a href="#">0005</a>
+						</div>
+						<div class="post-content">
+							<div class="post-1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam
+							</div>
+							<div class="post-2">
+								<span class="author">Post by <a href="#">admin</a></span>,
+								<span class="date">Apr 14</span>
+							</div>
+							<div class="post-3">
+								<div class="number">
+									<a href="#">99</a>
+								</div>
+								<div class="comments">
+									<a href="#">Comments</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="post">
+						<a href="#"><img src="./01.jpg" class="post-img"></a>
+						<h2><a href="#">Lorem Ipsum Post Title</a></h2>
+						<div class="metadata">
+							<a href="#">0001</a>,
+							<a href="#">0002</a>,
+							<a href="#">0003</a>,
+							<a href="#">0004</a>,
+							<a href="#">0005</a>
+						</div>
+						<div class="post-content">
+							<div class="post-1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam
+							</div>
+							<div class="post-2">
+								<span class="author">Post by <a href="#">admin</a></span>,
+								<span class="date">Apr 14</span>
+							</div>
+							<div class="post-3">
+								<div class="number">
+									<a href="#">99</a>
+								</div>
+								<div class="comments">
+									<a href="#">Comments</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="post">
+						<a href="#"><img src="./01.jpg" class="post-img"></a>
+						<h2><a href="#">Lorem Ipsum Post Title</a></h2>
+						<div class="metadata">
+							<a href="#">0001</a>,
+							<a href="#">0002</a>,
+							<a href="#">0003</a>,
+							<a href="#">0004</a>,
+							<a href="#">0005</a>
+						</div>
+						<div class="post-content">
+							<div class="post-1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam
+							</div>
+							<div class="post-2">
+								<span class="author">Post by <a href="#">admin</a></span>,
+								<span class="date">Apr 14</span>
+							</div>
+							<div class="post-3">
+								<div class="number">
+									<a href="#">99</a>
+								</div>
+								<div class="comments">
+									<a href="#">Comments</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="post">
+						<a href="#"><img src="./01.jpg" class="post-img"></a>
+						<h2><a href="#">Lorem Ipsum Post Title</a></h2>
+						<div class="metadata">
+							<a href="#">0001</a>,
+							<a href="#">0002</a>,
+							<a href="#">0003</a>,
+							<a href="#">0004</a>,
+							<a href="#">0005</a>
+						</div>
+						<div class="post-content">
+							<div class="post-1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam
+							</div>
+							<div class="post-2">
+								<span class="author">Post by <a href="#">admin</a></span>,
+								<span class="date">Apr 14</span>
+							</div>
+							<div class="post-3">
+								<div class="number">
+									<a href="#">99</a>
+								</div>
+								<div class="comments">
+									<a href="#">Comments</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
