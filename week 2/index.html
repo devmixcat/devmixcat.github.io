@@ -19,6 +19,9 @@
 		a{
 			text-decoration: none;
 		}
+		ol, ul{
+			list-style: none;
+		}
 		#page{
 			margin: 0px auto;
 			width:960px;
@@ -111,7 +114,7 @@
 		}
 		.post h2{
 			position: relative;
-		    top: -70px;
+		    top: -80px;
 		    left: 0px;
 		    width: 300px;
 		    padding: 5px;
@@ -127,7 +130,7 @@
 		}
 		.post .metadata{
 		    position: relative;
-		    top: -85px;
+		    top: -95px;
 		    left: 0px;
 		    width: 250px;
 		    padding: 5px;
@@ -148,7 +151,7 @@
 		}
 		.post .post-content{
 		 	position: relative;
-		    top: -290px;
+		    top: -300px;
 		    left: 230px;
 		    width: 210px;
 		    height: 220px;
@@ -199,8 +202,345 @@
 			font-size: 5px;
     		color: #F2AA00;
 		}
-		#banner{
-			background-image: url("./bg-banner.jpg");
+		#footer{
+			width: 940px;
+		    padding-left: 0px;
+		    padding-right: 10px;
+		    padding-top: 20px;
+		    height: 250px;
+		    float: left;
+		    background-image: url("./bg-footer.jpg");
+		    background-position: top center;
+		    background-repeat: no-repeat;
+		}
+		#footer-content{
+			float:left;
+			width:940px;
+		}
+		.widget{
+			float: left;
+		    margin-left: 10px;
+		    margin-right: 10px;
+		    margin-bottom: 10px;
+		}
+		.widget h3{
+		    color: #F2AA00;
+		    font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 14px;
+		    padding-bottom: 10px;
+		    padding-left: 10px;
+		}
+		.widget ul{
+			width: 200px;
+		    padding: 20px 10px;
+		    min-height: 170px;
+		    background-color: rgba(26,26,26,.5);
+		    border: 1px solid #252525;
+		    -webkit-border-radius: 5px;
+		    -khtml-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		}
+		.widget ul li{
+			font-size: 16px;
+		    padding-bottom: 3px;
+		    color: #FFF;
+		}
+		.widget ul li a{
+		    padding-left: 20px;
+		    color: #FFF;
+		    text-decoration: none;
+		}
+		.widget .corner{
+		    background-image: url("./widget-curl.jpg");
+		    background-position: bottom right;
+		    background-repeat: no-repeat;
+		    height: 30px;
+		    margin-top: -30px;
+		    margin-right: -2px;
+		}
+		#tabs ul{
+			background: none;
+		    border: 0px;
+		    padding: 0px;
+		    margin: 0px;
+		    width: 428px;
+		    min-height: 30px;
+		    height: 30px;
+		    -webkit-border-radius: 0px;
+		    -khtml-border-radius: 0px;
+		    -moz-border-radius: 0px;
+		    border-radius: 0px;
+		    padding-top:10px;
+		    padding-bottom:20px;
+		}
+		#tabs ul .active{
+			background-image: url("./tab-arrow.png");
+		    background-position: bottom center;
+		    background-repeat: no-repeat;
+		}
+		#tabs ul li {
+    		display: inline;
+		    float: left;
+		    text-align: left;
+		}
+		#tabs ul .active a {
+		    color: #F2AA00;
+		}
+		#tabs ul li a {
+		    display: block;
+		    margin: 0px;
+		    padding: 0px;
+		    color: #5A5A5A;
+		    font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 14px;
+		    padding-bottom: 10px;
+		    padding-left: 10px;
+		    padding-right: 20px;
+		}
+		#tabs .tab {
+		    width: 405px;
+		    padding: 10px 10px 20px 10px;
+		    min-height: 180px;
+		    margin-top: -6px;
+		    background-color: rgba(26,26,26,.5);
+		    border: 1px solid #252525;
+		    -webkit-border-radius: 5px;
+		    -khtml-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		}
+		.tab .item {
+		    float: left;
+		    padding: 5px 10px;
+		    -webkit-border-radius: 7px;
+		    -khtml-border-radius: 7px;
+		    -moz-border-radius: 7px;
+		    border-radius: 7px;
+		}
+		.tab .item h4 {
+		    padding-bottom: 3px;
+		    margin: 0px;
+		    color: #FFFFFF;
+		    font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 14px;
+		}
+		.tab .item h4 a {
+		    color: #FFFFFF;
+		    text-decoration: none;
+		}
+		.tab .item p {
+			padding-bottom: 3px;
+			margin: 0px;
+		    color: #909090;
+		    font-size: 15px;
+		}
+		.pager {
+		    float: right;
+		    text-align: right;
+		    padding-right: 40px;
+		}
+		.pager a {
+		    color: #4A4848;
+		    padding-left: 5px;
+		}
+		.pager a.active {
+		    color: #D11300;
+		}
+		#footer-tail{
+			float: left;
+		    width: 940px;
+		    height: 45px;
+		    padding: 10px;
+		    margin-top: 40px;
+		    background-image: url("./bg-footer-line.jpg");
+		    background-position: top center;
+		    background-repeat: no-repeat;
+		    font-family: Tahoma, Geneva, sans-serif;
+		    font-size: 10px;
+		    color: #515151;
+		}
+		#footer-tail ul li{
+			display: inline;
+		}
+		#footer-tail ul li a{
+		    color: #515151;
+		    padding-right: 5px;
+		    border-right: 1px solid #515151;
+		}
+		#footer-tail ul li:last-child a{
+			border-right:none;
+		}
+		#copyright{
+			 float: right;
+   			 padding-right: 30px;
+		}  
+		#top_banner {
+		    float: left;
+		    width: 830px;
+		    height: 250px;
+		    padding-left: 130px;
+		    padding-top: 10px;
+		    background-image: url("./bg-banner.jpg");
+		    background-position: center top;
+		    background-repeat: no-repeat;
+		}
+		.banner_container {
+		    float: left;
+		    width: 860px;
+		    height: 250px;
+		    position: relative;
+		    text-align: left;
+		}
+		#slider {
+		    position: relative;
+		    width: 830px;
+		    margin-left: 100px
+		 	overflow:hidden;
+		}
+		#slider ul, #slider li {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		    background: none;
+		}
+		#slider li {
+		    width: 830px;
+		    height: 250px;
+		    overflow: hidden;
+		}
+		#slider li a {
+		    background: none;
+		}
+		#slider li img {
+		    border: 1px solid #FFF;
+		    height: 248px;
+		    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+		    -moz-box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+		    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+		}
+		.bubble {
+		    position: absolute;
+		    float: right;
+		    width: 260px;
+		    padding-right: 35px;
+		    height: 210px;
+		    margin-top: -255px;
+		    margin-left: 535px;
+		    background-image: url("./bg-bubble.png");
+		    color: #FFF;
+		}
+		.featured_post .post_title {
+			margin:0px;
+		    height: 29px;
+		    padding-top: 18px;
+		    text-align: right;
+		    font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 18px;
+		    color: #680000;
+		}
+		.featured_post .post_title a {
+		    color: #680000;
+		    text-decoration: none;
+		}
+		.featured_post .post_brief {
+			margin:0px;
+		    height: 67px;
+		    padding-left: 30px;
+		    overflow: hidden;
+		    text-align: right;
+		    color: #1B1B1B;
+		}
+		.featured_post .post_info {
+		    margin-left: 30px;
+		    text-align: right;
+		    padding-top: 2px;
+		    font-family: Tahoma, Geneva, sans-serif;
+		    font-size: 10px;
+		    color: #969696;
+		    border-top: 1px solid #FFC000;
+		}
+		.featured_post .post_comments {
+		    text-align: center;
+		    float: right;
+		    margin-top: 20px;
+		    margin-right: 10px;
+		    width: 65px;
+		    height: 40px;
+		}
+		.featured_post .post_comments .number {
+		    font-family: 'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+		    font-size: 24px;
+		    color: #FFF;
+		}
+		.featured_post .post_comments .comments {
+		    font-size: 14px;
+		    color: #F2AA00;
+		}
+		.featured_post .post_comments a {
+		    color: inherit;
+		    text-decoration: none;
+		}
+		.featured_post .post_info a {
+		    color: #969696;
+		    text-decoration: none;
+		}
+		#prevBtn, #nextBtn {
+		    display: block;
+		    width: 65px;
+		    height: 40px;
+		    position: absolute;
+		    left: -65px;
+		    top: 185px;
+		    margin:0px;
+		    padding:0px;
+		}
+		#nextBtn {
+		    left: 630px;
+		}
+		#prevBtn a {
+		    display: block;
+		    width: 65px;
+		    height: 40px;
+		    background: url("./btn-prev.png") no-repeat left;
+		}
+		#nextBtn a {
+		    display: block;
+		    width: 65px;
+		    height: 40px;
+		    background: url("./btn-next.png") no-repeat right;
+		}
+		#main_navigation {
+		    float: right;
+		    margin-right: 20px;
+		    margin-top: -18px;
+		}
+		#main_navigation li {
+		    display: inline;
+		    width: 120px;
+		}
+		#main_navigation li a.selected {
+		    background-image: url("./bg-main-navigation.png");
+		    background-position: left;
+		    background-repeat: no-repeat;
+		}
+		#main_navigation li a {
+		    display: block;
+		    float: left;
+		    padding-top: 7px;
+		    padding-bottom: 8px;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    margin-left: 5px;
+		    color: #FFF;
+		    font-family: 'KomikaTextItalic', Arial, Helvetica, sans-serif;
+		    font-size: 18px;
+		    text-decoration: none;
+		    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+		    -webkit-border-top-right-radius: 3px;
+		    -khtml-border-radius-topright: 3px;
+		    -moz-border-radius-topright: 3px;
+		    border-top-right-radius: 3px;
 		}
 	</style>
 </head>
@@ -225,8 +565,111 @@
 			<div id="header-logo">
 				<a href="#"><img src="./logo.png"></a>
 			</div>
+			<ul id="main_navigation">
+            	<li><a href="#" class="selected">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
 		</div>
 		<div id="content">
+			<div id="top_banner">
+              <div class="banner_container">
+                <div id="slider" style="width: 830px; height: 250px; overflow: hidden;">
+                    <ul style="width: 4150px;">				
+                      <li style="float: left;"><a href="#"><img src="./01 (1).jpg" alt="Preview"></a>
+                            <!-- Featured post Bubble -->
+                            <div class="bubble">
+                                <div class="featured_post">
+                                    <h2 class="post_title"><a href="#">Post title</a></h2>
+                                    <p class="post_brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam</p>
+                                    <div class="post_info">
+                                        <span class="author">Posted by <a href="#">Admin</a></span>,
+                                        <span class="date">Apr 14</span>
+                                    </div>
+                                    <div class="post_comments">
+                                        <div class="number"><a href="#">29</a></div>
+                                        <div class="comments"><a href="#">Comments</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Featured post Bubble -->
+                        </li>
+                        <li style="float: left;"><a href="#"><img src="images/banner/02.jpg" alt="Preview"></a>
+                        	<!-- Featured post Bubble -->
+                            <div class="bubble">
+                                <div class="featured_post">
+                                    <h2 class="post_title"><a href="#">Lorem Ipsum dolor Sit Amet</a></h2>
+                                    <p class="post_brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam</p>
+                                    <div class="post_info">
+                                        <span class="author">Posted by <a href="#">Admin</a></span>,
+                                        <span class="date">Apr 14</span>
+                                    </div>
+                                    <div class="post_comments">
+                                        <div class="number"><a href="#">12</a></div>
+                                        <div class="comments"><a href="#">Comments</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Featured post Bubble -->
+                        </li>
+                        <li style="float: left;"><a href="#"><img src="images/banner/03.jpg" alt="Preview"></a>
+                        	<!-- Featured post Bubble -->
+                            <div class="bubble">
+                                <div class="featured_post">
+                                    <h2 class="post_title"><a href="#">Post title</a></h2>
+                                    <p class="post_brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam</p>
+                                    <div class="post_info">
+                                        <span class="author">Posted by <a href="#">Admin</a></span>,
+                                        <span class="date">Apr 14</span>
+                                    </div>
+                                    <div class="post_comments">
+                                        <div class="number"><a href="#">15</a></div>
+                                        <div class="comments"><a href="#">Comments</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Featured post Bubble -->
+                        </li>
+                        <li style="float: left;"><a href="#"><img src="images/banner/04.jpg" alt="Preview"></a>
+                        	<!-- Featured post Bubble -->
+                            <div class="bubble">
+                                <div class="featured_post">
+                                    <h2 class="post_title"><a href="#">Lorem Ipsum dolor Sit Amet</a></h2>
+                                    <p class="post_brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam</p>
+                                    <div class="post_info">
+                                        <span class="author">Posted by <a href="#">Admin</a></span>,
+                                        <span class="date">Apr 14</span>
+                                    </div>
+                                    <div class="post_comments">
+                                        <div class="number"><a href="#">8</a></div>
+                                        <div class="comments"><a href="#">Comments</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Featured post Bubble -->
+                        </li>
+                        <li style="float: left;"><a href="#"><img src="images/banner/05.jpg" alt="Preview"></a>
+                        	<!-- Featured post Bubble -->
+                            <div class="bubble">
+                                <div class="featured_post">
+                                    <h2 class="post_title"><a href="#">Lorem Ipsum dolor Sit Amet</a></h2>
+                                    <p class="post_brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam</p>
+                                    <div class="post_info">
+                                        <span class="author">Posted by <a href="#">Admin</a></span>,
+                                        <span class="date">Apr 14</span>
+                                    </div>
+                                    <div class="post_comments">
+                                        <div class="number"><a href="#">100</a></div>
+                                        <div class="comments"><a href="#">Comments</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Featured post Bubble -->
+                        </li>
+                    </ul>
+                  </div> <span id="prevBtn"><a href="javascript:void(0);"></a></span> <span id="nextBtn"><a href="javascript:void(0);"></a></span>  
+            	</div>            
+            </div>
 			<div id="content-wrapper">
 				<div id="content-wrapper-content">
 					<div class="post">
@@ -258,7 +701,7 @@
 						</div>
 					</div>
 					<div class="post">
-						<a href="#"><img src="./01.jpg" class="post-img"></a>
+						<a href="#"><img src="./02.jpg" class="post-img"></a>
 						<h2><a href="#">Lorem Ipsum Post Title</a></h2>
 						<div class="metadata">
 							<a href="#">0001</a>,
@@ -286,7 +729,7 @@
 						</div>
 					</div>
 					<div class="post">
-						<a href="#"><img src="./01.jpg" class="post-img"></a>
+						<a href="#"><img src="./03.jpg" class="post-img"></a>
 						<h2><a href="#">Lorem Ipsum Post Title</a></h2>
 						<div class="metadata">
 							<a href="#">0001</a>,
@@ -314,7 +757,7 @@
 						</div>
 					</div>
 					<div class="post">
-						<a href="#"><img src="./01.jpg" class="post-img"></a>
+						<a href="#"><img src="./04.jpg" class="post-img"></a>
 						<h2><a href="#">Lorem Ipsum Post Title</a></h2>
 						<div class="metadata">
 							<a href="#">0001</a>,
@@ -343,6 +786,78 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div id="footer">
+			<div id="footer-content">
+				<div class="widget">
+					<h3>CATEGORIES</h3>
+					<ul>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+					</ul>
+					<div class="corner">
+					</div>
+				</div>
+				<div class="widget">
+					<h3>ARCGIVE</h3>
+					<ul>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+						<li><a href="#">This is TEST li and a Href.</a></li>
+					</ul>
+					<div class="corner">
+					</div>
+				</div>
+				<div class="widget">
+					<div id="tabs">
+						<ul>
+							<li class="active"><a href="#tab-1">Popular Posts</a></li>
+							<li><a href="#tab-2">Recent Posts</a></li>
+							<li><a href="#tab-3">Recent Comments</a></li>
+						</ul>
+						<div class="tab" id="tab-1" style="display: block;">
+                            <span class="item">
+                            	<h4><a href="#">Lorem Ipsum Popular Post 1</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                            </span>
+                            <span class="item">
+                            	<h4><a href="#">Lorem Ipsum Popular Post 2</a></h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
+                            </span>
+                          	<span class="item">
+                            	<h4><a href="#">Lorem Ipsum Post 3</a></h4>
+                          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                          	</span>
+                          	<span class="pager"><a href="#"><</a><a href="#">1</a><a href="#" class="active">2</a><a href="#">3</a><a href="#">></a></span>
+                        </div>
+					</div>
+					<div class="corner">
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div id="footer-tail">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Pxxxxx Pxxxx</a></li>
+				<li><a href="#">Sitemap</a></li>
+			</ul>
+			<div id="copyright">AABBCC</div>
 		</div>
 	</div>
 </body>
