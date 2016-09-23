@@ -1,37 +1,43 @@
+/* This css is draw menu logo */ 
+/* The menu logo's position */
+.b{
+  position:absolute;
+  //top:50px;
+  //left:160px;
+  width:80px;
+  height:80px;
+  //border-radius:50%;
+  background:transparent;
+  transition:.2s;
+  cursor:pointer;
+}
 
-	.b{
-	  position:absolute;
-	  //top:50px;
-	  //left:160px;
-	  width:80px;
-	  height:80px;
-	  //border-radius:50%;
-	  background:transparent;
-	  transition:.2s;
-	  cursor:pointer;
-	}
-	.b i{
-	  position:absolute;
-	  display:block;
-	  width:45px;
-	  height:2px;
-	  background:#000;
-	  left:15px;
-	  border-radius:2px;
-	  transition:.2s;
-	}
-	.b1{
-	  top:29px;
-	}
-	.b2{
-	  top:39px;
-	}
-	.b3{
-	  top:49px;
-	}
-	
-	.b:hover{
-	  //background:#c00;
-	}
-	
+/* Draw three lines */
+.b i{
+  position:absolute;
+  display:block;
+  width:45px;
+  height:2px;
+  background:#000;
+  left:15px;
+  border-radius:2px;
+  transition:.2s;
+}
+/* The first line */
+.b1{
+  top:29px;
+}
+/* The second line */
+.b2{
+  top:39px;
+}
+/* The third line */
+.b3{
+  top:49px;
+}
+
+.b:hover{
+  //background:#c00;
+}
+
 	
