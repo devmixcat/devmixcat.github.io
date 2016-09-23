@@ -221,7 +221,11 @@
 
     @media screen and (max-width: 600px){
        .main-nav a span{
-            font-size: 25px;
+            font-size: 20px;
+       }
+       .main-nav{
+            padding-left: 30px !important;
+            padding-right: 30px !important;
        }
     }
 
@@ -232,7 +236,7 @@
 
     @media screen and (max-width:600px){
         .main-inline{
-            margin-top:6em !important;
+            margin-top:5em !important;
         }
     }
 
@@ -430,44 +434,50 @@
         padding: 0px;
     }
     #main-content-about{
-        position: relative;
-        width: 1013px;
+        //position: relative;
+        width: 100%;
         height:auto;
-        margin: 0px auto;
         margin-top:30px;
         margin-bottom: 80px;
+        text-align: center;
     }
     #main-content-about p {
-        margin: 0px auto;
+        margin: 10px;
         font-size: 14px;
         line-height: 26px;
         padding: 0px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        //padding-bottom: 5px;
         //text-align: left;
     }
-    .content-about{
-        margin: 0px auto;
-        padding-top:0px !important;
-    }
     .content-left{
-        position: absolute;
-        width: 500px;
-        float:left;
-        //padding:0px;
-
+        display: inline-block;
+        padding-right:10px;
+        width:500px;
+        //padding-left:10%;
+        vertical-align : top ;
+        text-align: left;
     }
     .content-right{
+        display: inline-block;
+        padding-left:10px;
         width:500px;
-        margin-left: 510px;
-        //float:right;
-        //padding: 0px;
+        //padding-right:5%;
+        vertical-align : top ;
+        text-align: left;
     }
+
+    .content-about{
+        padding-top:0px !important;
+    }
+
     .font-b{
         font-weight: bold;
         padding-top :5px;
         padding-bottom: 0px !important;
+        margin-bottom: 0px;
     }
+
     #in-content-main-000:hover, #in-content-main-001:hover, #in-content-main-002:hover
     , #in-content-main-003:hover {
         -webkit-filter: grayscale(0%);
