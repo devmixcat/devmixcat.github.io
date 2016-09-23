@@ -343,7 +343,7 @@
         margin-top: 80px;
         padding:0px;
     }
-    #content-title p{
+    .content-title p{
         line-height: 21px;
     }
     
@@ -419,14 +419,14 @@
          background-color: orange;        
     }
     .grayscale {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    
-    filter: grayscale(100%);
-    
-    filter: gray; 
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        
+        filter: grayscale(100%);
+        
+        filter: gray; 
     }
 
     .in-content-main p{
@@ -487,4 +487,13 @@
         filter: grayscale(0%);
         filter: gray; 
     }
+    .content-pic {
+        text-align: center;
 
+    }
+    .content-pic img{
+        border-radius:50%;
+        width: 150px;
+        height:150px;
+        box-shadow:4px 4px 10px rgba(20%,20%,40%,0.2);
+    }
