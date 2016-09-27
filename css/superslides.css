@@ -31,6 +31,7 @@
   display: block;
   padding: 10px;
   color: #fff;
+  font-size: 50px;
 }
 .slides-navigation a.prev {
   left: 10px;
