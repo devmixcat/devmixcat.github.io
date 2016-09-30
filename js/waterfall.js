@@ -14,8 +14,8 @@ var currentFlow = {
     flowItems: flowItems,
     pin: 4,
     width: 458,
-    horizontalMargin: 15,
-    verticalMargin: 15
+    horizontalMargin: 10,
+    verticalMargin: 10
 };
 // 聲明響應式的響應斷點
 var deviceWidth = {
