@@ -77,6 +77,8 @@
                 scrollTop:0
             },1000);
         });
+        //console.log("##this.scrollTop():"+$(this).scrollTop());
+        $("footer").fadeIn("fast");
          
         $(window).scroll(function() {
             if ( $(this).scrollTop() > 300){
@@ -88,7 +90,7 @@
                 $('#gotop').stop().fadeOut("fast");
                 $("#header-top").fadeIn("fast");
             }
-            
+            //console.log("##this.scrollTop():"+$(this).scrollTop());
             var h = $(document).height() -( $(window).height()+$(document).scrollTop() );
             //console.log("##:"+h);
             if( h < 100 )
