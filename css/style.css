@@ -544,4 +544,22 @@
     ul li img{
         width:458px;
         height:300px;
+        z-index: 0;
     }
+    .box-content{
+        text-align: center;
+        width:458px;
+        height:35px;
+        margin-top: -10px;
+        line-height: 35px;
+        color: #4f4f4f;
+        
+    }
+    .box-content p{
+        font-size: 14px;
+        position:relative;
+        z-index: 100 !important;
+        font-weight: bold;
+        margin:0px auto;
+        width:100px;
+        background-color: #f0f0f0;
