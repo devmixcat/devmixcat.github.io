@@ -550,7 +550,7 @@
         text-align: center;
         width:458px;
         height:35px;
-        margin-top: -10px;
+        margin-top: -15px;
         line-height: 35px;
         color: #4f4f4f;
         
@@ -563,5 +563,5 @@
         z-index: 100 !important;
         font-weight: bold;
         margin:0px auto;
-        width:100px;
+        width:110px;
         background-color: #f0f0f0;
