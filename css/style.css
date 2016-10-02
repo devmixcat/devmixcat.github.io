@@ -556,6 +556,8 @@
         
     }
     .box-content p{
+        border-width: 1px;
+        border: #e0e0e0 1px solid;
         font-size: 14px;
         position:relative;
         z-index: 100 !important;
