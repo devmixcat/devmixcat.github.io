@@ -26,6 +26,17 @@
                 }
             );
 
+            $(".box-content").find("p").hide();
+            $(".box li").mouseenter(function(){
+                //$(this).css("background","#fff");
+                $(this).find("p").fadeIn();
+            });
+            $(".box li").mouseleave(function(){
+                //$(this).css("background","#f9f9f9");
+                //$(this).find("img").fadeIn("slow");
+                $(this).find("p").fadeOut();
+            });
+
             /*
             $("#in-content-main-000").mouseover(function () {
                 $("#in-content-main-000").removeClass("grayscale");
