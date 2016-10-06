@@ -516,9 +516,8 @@
         width:100%;
         margin: 0px auto;
         padding-top: 8%;
-        //padding-left: 20px;
-        margin-bottom: 80px;
         text-align: center;
+        padding-bottom: 65px;
     }
     
     .box {
@@ -548,7 +547,7 @@
     }
     .box-content{
         text-align: center;
-        width:350px;
+        
         height:35px;
         margin-top: -35px;
         line-height: 35px;
