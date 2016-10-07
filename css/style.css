@@ -289,7 +289,7 @@
     footer{
         background-color: #fff;
         float: left;
-        margin-top:10px;
+        //margin-top:10px;
         width: 100%;
         height: 65px;
         border-top: 1px solid #ededed;
@@ -400,7 +400,7 @@
          filter: gray; 
     }
     #in-content-main-002{
-         background-image: url('../img/pics/003.jpg');
+         background-image: url('../img/pics/002.jpg');
          background-repeat: no-repeat;
          -webkit-filter: grayscale(100%);
          -moz-filter: grayscale(100%);
@@ -514,15 +514,7 @@
         width:100%;
         padding-top: 8%;
     }
-    @media screen and (max-width: 600px){
-        .box{
-            width: 100%;
-        }
-        .box img{
-            width: 100%;
 
-        }
-    }
     .wrap-box{
         margin:0px auto;
         width:75%;
@@ -553,3 +545,15 @@
         width:350px;
         background-color: rgba(255,255,255,0.75) !important;
     }
+    @media screen and (max-width: 635px){
+        .box{
+            width: 100%;
+        }
+        .box img{
+            width: 100%;
+        }
+        .box-content p{
+            width: inherit;
+        }
+    }
+    
