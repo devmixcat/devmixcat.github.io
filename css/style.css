@@ -514,7 +514,15 @@
         width:100%;
         padding-top: 8%;
     }
-    
+    @media screen and (max-width: 600px){
+        .box{
+            width: 100%;
+        }
+        .box img{
+            width: 100%;
+
+        }
+    }
     .wrap-box{
         margin:0px auto;
         width:75%;
