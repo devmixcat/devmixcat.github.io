@@ -27,11 +27,11 @@
             );
 
             $(".box-content").find("p").hide();
-            $(".box li").mouseenter(function(){
+            $(".box").mouseenter(function(){
                 //$(this).css("background","#fff");
                 $(this).find("p").fadeIn();
             });
-            $(".box li").mouseleave(function(){
+            $(".box").mouseleave(function(){
                 //$(this).css("background","#f9f9f9");
                 //$(this).find("img").fadeIn("slow");
                 $(this).find("p").fadeOut();
@@ -81,7 +81,7 @@
 
     $(function(){  
         $("img.lazy").lazyload({effect : "fadeIn",placeholder : "../img/logo/load.gif"});
-        $("footer").hide();
+        //$("footer").hide();
         //gotop條件
         $("#gotop").click(function(){
             jQuery("html,body").animate({
