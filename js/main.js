@@ -89,7 +89,7 @@
             },1000);
         });
         //console.log("##this.scrollTop():"+$(this).scrollTop());
-        $("footer").fadeIn("fast");
+        //$("footer").fadeIn("fast");
          
 
         $(window).scroll(function() {
