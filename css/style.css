@@ -552,12 +552,15 @@
         background-color: rgba(255,255,255,0.75) !important;
     }
 
-    @media screen and (min-width: 1200px) and (max-width:1600px){
+    @media screen and (min-width: 1200px) and (max-width:1400px){
         .box{
-            width:800px;
+            width:1013px;
         }
         .box img{
-            width:800px;
+            width:1013px;
+        }
+        .box-content p {
+            width:1013px;
         }
     }
     @media screen and (max-width: 635px){
