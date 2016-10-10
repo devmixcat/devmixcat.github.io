@@ -553,7 +553,7 @@
     }
 
     @media screen and (min-width: 1200px) and (max-width:1400px){
-        #main-contet{
+        #main-content{
             margin-bottom: 0px;  
         }
         .box{
@@ -564,7 +564,7 @@
         }
         .box-content{
             height:80px;
-            margin-top:80px;
+            margin-top:-80px;
             line-height: 80px;
         }
         .box-content p {
