@@ -553,6 +553,9 @@
     }
 
     @media screen and (min-width: 1200px) and (max-width:1400px){
+        .wra{
+            padding-bottom: 3530px;
+        }
         .box{
             width:1013px;
         }
