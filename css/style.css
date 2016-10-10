@@ -442,7 +442,7 @@
     }
     #main-content{
         margin-top: 50px;
-        //margin-bottom: 70px;
+        margin-bottom: 70px;
     }
     #about-main-content{
         margin-top: 150px;
@@ -553,6 +553,9 @@
     }
 
     @media screen and (min-width: 1200px) and (max-width:1400px){
+        #main-contet{
+            margin-bottom: 0px;  
+        }
         .box{
             width:1013px;
         }
@@ -560,9 +563,9 @@
             width:1013px;
         }
         .box-content{
-            height:100px;
-            margin-top:-100px;
-            line-height: 100px;
+            height:80px;
+            margin-top:80px;
+            line-height: 80px;
         }
         .box-content p {
             width:1013px;
