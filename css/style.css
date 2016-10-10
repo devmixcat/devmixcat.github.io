@@ -553,9 +553,6 @@
     }
 
     @media screen and (min-width: 1200px) and (max-width:1400px){
-        #wrap{
-            padding-bottom: 3530px;
-        }
         .box{
             width:1013px;
         }
@@ -564,6 +561,9 @@
         }
         .box-content p {
             width:1013px;
+        }
+        footer{
+            position: relative;
         }
     }
     @media screen and (max-width: 635px){
