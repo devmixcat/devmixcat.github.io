@@ -588,7 +588,10 @@
 
     @media screen and (max-width: 1200px){
         #wrap{
-            width: 95%;
+            padding-top:90px;
+        }
+        .wrap-box{
+            width:95%;
         }
         .box{
             width:100%;

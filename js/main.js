@@ -26,17 +26,6 @@
                 }
             );
 
-            $(".box-content").find("p").hide();
-            $(".box").mouseenter(function(){
-                //$(this).css("background","#fff");
-                $(this).find("p").fadeIn();
-            });
-            $(".box").mouseleave(function(){
-                //$(this).css("background","#f9f9f9");
-                //$(this).find("img").fadeIn("slow");
-                $(this).find("p").fadeOut();
-            });
-
             /*
             $("#in-content-main-000").mouseover(function () {
                 $("#in-content-main-000").removeClass("grayscale");
@@ -91,8 +80,37 @@
         //console.log("##this.scrollTop():"+$(this).scrollTop());
         //$("footer").fadeIn("fast");
          
+        var myWidth = window.innerWidth;
+        if(myWidth>1200){
+            $(".box-content").find("p").hide();
+            $(".box").mouseenter(function(){
+                //$(this).css("background","#fff");
+                $(this).find("p").fadeIn();
+            });
+            $(".box").mouseleave(function(){
+                //$(this).css("background","#f9f9f9");
+                //$(this).find("img").fadeIn("slow");
+                $(this).find("p").fadeOut();
+            });
+        }
 
         $(window).scroll(function() {
+            myWidth =window.innerWidth;
+            if(myWidth<1200){
+                $(".box-content").find("p").show();
+            }else{
+                $(".box-content").find("p").hide();
+                $(".box").mouseenter(function(){
+                    //$(this).css("background","#fff");
+                    $(this).find("p").fadeIn();
+                });
+                $(".box").mouseleave(function(){
+                    //$(this).css("background","#f9f9f9");
+                    //$(this).find("img").fadeIn("slow");
+                    $(this).find("p").fadeOut();
+                });
+            }
+
             if ( $(this).scrollTop() > 300){
                 $("#gotop").fadeIn("fast");
                 if(!$("#menu-main").is(":visible")){
