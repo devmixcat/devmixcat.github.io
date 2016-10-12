@@ -563,6 +563,10 @@
         #main-content{
             margin-bottom: 0px;  
         }
+        #wrap{
+            margin-left: 10px;
+            margin-right:10px;
+        }
         .box{
             width:1013px;
         }
@@ -582,37 +586,27 @@
         }
     }
 
-    @media screen and (max-width: 1200px){
-         #main-content{
-            margin-bottom: 0px;  
+  @media screen and (max-width: 1200px){
+        #wrap{
+            margin-top:50px;
+            margin-bottom:70px;
         }
         .box{
-            width:90%;
+            width:100%;
         }
         .box img{
-            width:90%;
+            width:100%;
         }
         .box-content{
-            height:80px;
-            margin-top:-80px;
-            line-height: 80px;
+            height:50px;
+            margin-top:-50px;
+            line-height: 50px;
         }
         .box-content p {
-            width:80%;
+            width:100%;
         }
         footer{
             position: relative;
-        }
-    }
-    @media screen and (max-width: 635px){
-        .box{
-            width: 100%;
-        }
-        .box img{
-            width: 100%;
-        }
-        .box-content p{
-            width: inherit;
         }
     }
     
