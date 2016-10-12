@@ -17,10 +17,10 @@
         if(myWidth<1200){
             $(".box-content").find("p").show();
              $(".box").mouseenter(function(){
-                  
+                  $(".box-content").find("p").show();
             });
             $(".box").mouseleave(function(){
-               
+               $(".box-content").find("p").show();
             });
         }
 
@@ -30,10 +30,10 @@
             if(myWidth<1200){
                 $(".box-content").find("p").show();
                 $(".box").mouseenter(function(){
-                  
+                  $(".box-content").find("p").show();
                 });
                 $(".box").mouseleave(function(){
-                   
+                   $(".box-content").find("p").show();
                 });
             }
 
