@@ -586,10 +586,9 @@
         }
     }
 
-  @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1200px){
         #wrap{
-            margin-top:50px;
-            margin-bottom:70px;
+            width: 95%;
         }
         .box{
             width:100%;
