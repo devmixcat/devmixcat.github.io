@@ -29,7 +29,7 @@
             console.log("01:"+myWidth);
             if(myWidth<1200){
                 $(".box-content").find("p").show();
-                $(".box").mouseenter(function(){
+                $(".box").mouseover(function(){
                   $(".box-content").find("p").show();
                 });
                 $(".box").mouseleave(function(){
@@ -39,7 +39,7 @@
 
             if(myWidth>1200){
                 $(".box-content").find("p").hide();
-                $(".box").mouseenter(function(){
+                $(".box").mouseover(function(){
                     //$(this).css("background","#fff");
                     $(this).find("p").fadeIn();
                 });
