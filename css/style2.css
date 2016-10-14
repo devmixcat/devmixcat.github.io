@@ -585,14 +585,14 @@
             float:left;
             position: relative;
             min-height: 1px;
-            width: 46%;
+            width: 47.5%;
             padding-right: 15px;
         }
         .l-box{
             margin-left: 0px;
         }
         .in-box{
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             position: relative;
             overflow: hidden;
         }
@@ -651,7 +651,7 @@
             margin-left: 24%;
         }
         .in-box{
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             position: relative;
             overflow: hidden;
         }
