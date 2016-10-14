@@ -1,10 +1,10 @@
     $(document).ready(function(){
         var winWidth = window.innerWidth;
-        if(winWidth<1030){
+        if(winWidth<1080){
                 $(".box-content p").show();
                 $(".box").unbind("mouseover").unbind("mouseleave");
         }
-        if(winWidth >=1030){
+        if(winWidth >=1080){
             $(".box-content p").hide();
             $(".box").mouseover(function(){
                     //$(this).css("background","#fff");
@@ -20,13 +20,13 @@
         $(window).resize(function() {
             var myWidth = window.innerWidth;
             myWidth =window.innerWidth;
-            console.log("01:"+myWidth);
-            if(myWidth<1030){
+            //console.log("01:"+myWidth);
+            if(myWidth<1080){
                 $(".box-content p").show();
                 $(".box").unbind("mouseover").unbind("mouseleave");
             }
 
-            if(myWidth>=1030){
+            if(myWidth>=1080){
                 $(".box-content p").hide();
                 $(".box").mouseover(function(){
                     //$(this).css("background","#fff");
