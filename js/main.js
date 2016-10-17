@@ -1,43 +1,18 @@
     $(document).ready(function(){
-        var winWidth = window.innerWidth;
-        if(winWidth<1080){
-                $(".box-content p").show();
-                $(".box").unbind("mouseover").unbind("mouseleave");
-        }
-        if(winWidth >=1080){
-            $(".box-content p").hide();
-            $(".box").mouseover(function(){
-                    //$(this).css("background","#fff");
-                    $(this).find("p").fadeIn();
-            });
-            $(".box").mouseleave(function(){
-                //$(this).css("background","#f9f9f9");
-                //$(this).find("img").fadeIn("slow");
-                $(this).find("p").fadeOut();
-            });
-        }
+    
+        $(".box-img").find("img").hide();
+        $(".box").mouseover(function(){
+            $(this).find("img").fadeIn("fast");
+        });
+        $(".box").mouseover(function(){
+            $(this).find("h2").fadeOut("fast");
+        });
 
-        $(window).resize(function() {
-            var myWidth = window.innerWidth;
-            myWidth =window.innerWidth;
-            //console.log("01:"+myWidth);
-            if(myWidth<1080){
-                $(".box-content p").show();
-                $(".box").unbind("mouseover").unbind("mouseleave");
-            }
-
-            if(myWidth>=1080){
-                $(".box-content p").hide();
-                $(".box").mouseover(function(){
-                    //$(this).css("background","#fff");
-                    $(this).find("p").fadeIn();
-                });
-                $(".box").mouseleave(function(){
-                    //$(this).css("background","#f9f9f9");
-                    //$(this).find("img").fadeIn("slow");
-                    $(this).find("p").fadeOut();
-                });
-            }
+        $(".box").mouseleave(function(){
+            $(this).find("img").fadeOut("fast");
+        });
+         $(".box").mouseleave(function(){
+            $(this).find("h2").fadeIn("fast");
         });
 
         $(".main-nav li a").mouseover(function(){
@@ -131,14 +106,14 @@
                 $("#header-top").fadeIn("fast");
             }
             //console.log("##this.scrollTop():"+$(this).scrollTop());
-            var h = $(document).height() -( $(window).height()+$(document).scrollTop() );
+            // var h = $(document).height() -( $(window).height()+$(document).scrollTop() );
             //console.log("##:"+h);
-            if( h < 100 )
-            {
-                $("footer").fadeIn("fast");
-            }else{
-                $("footer").fadeOut("fast");
-            }
+            // if( h < 100 )
+            // {
+            //     $("footer").fadeIn("fast");
+            // }else{
+            //     $("footer").fadeOut("fast");
+            //}
            /*
            console.log("scrolltop:"+$(this).scrollTop());
            var getScrolltop = $(this).scrollTop();
