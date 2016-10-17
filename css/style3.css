@@ -680,6 +680,7 @@
             opacity:0.8;
             filter:alpha(opacity=80); /* 针对 IE8 以及更早的版本 */ 
             height: auto;
+            border-radius: 5px;
         }
         .l-box1{
             margin-left:8.33333333%;
