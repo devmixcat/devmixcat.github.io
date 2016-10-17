@@ -18,7 +18,7 @@
         background-color: #ffffff;
         color: #333333;
         //font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        font-family: "微軟正黑體","Helvetica Neue", "Helvetica", "Arial", "sans-serif";
         height: 100%;
         padding: 0;           
     }
@@ -291,7 +291,7 @@
         //margin-top:10px;
         width: 100%;
         height: 65px;
-        border-top: 1px solid #ededed;
+        //border-top: 1px solid #ededed;
         font-size: 10px;
         line-height: 15px;
         letter-spacing: .05em;
@@ -304,6 +304,7 @@
     footer li, footer address{
         display: inline-block;
         margin: 0 10px;
+        margin-left: 
         
     }
     footer li span{
@@ -331,7 +332,7 @@
     }
 
     #div-footer-nav{
-        text-align: center;
+        //text-align: center;
         width: 100%;
         margin-top: 25px;
         float: left;
@@ -525,7 +526,7 @@
     #in-wrap{
         margin: 0px auto;
     }
-    .box {
+    .box{
         float:left;
         position: relative;
         min-height: 1px;
@@ -553,6 +554,25 @@
     }
     .box a img{
         width: 100%;
+        opacity: 1;
+        transition: opacity .2s ease-in;
+        -moz-transition: opacity .2s ease-in;
+        -webkit-transition: opacity .2s ease-in;
+        -o-transition: opacity .2s ease-in;
+    }
+    .box:hover a img{
+        opacity:0;
+        transition: opacity .2s ease-out;
+        -moz-transition: opacity .2s ease-out;
+        -webkit-transition: opacity .2s ease-out;
+        -o-transition: opacity .2s ease-out;
+    }
+    .box:hover a h2{
+        opacity: 1;
+        transition: opacity .2s ease-in;
+        -moz-transition: opacity .2s ease-in;
+        -webkit-transition: opacity .2s ease-in;
+        -o-transition: opacity .2s ease-in;
     }
 
     .box-content{
@@ -644,6 +664,7 @@
             overflow: hidden;
         }
         .box {
+            border-radius: 5px;
             float:left;
             position: relative;
             min-height: 1px;
@@ -702,10 +723,15 @@
             vertical-align: middle;
         }
         .innerBox h2{
+            opacity: 0;
+            filter: alpha(opacity=);
             margin: 10px 0 0px 0;
             font-size: 16px;
             font-weight: 300;
             text-shadow:2px 2px 2px #cccccc;
+        }
+        .box:first-child h2{
+            text-shadow:0px 0px 0px;
         }
         .box-content p{
             font-size: 14px;

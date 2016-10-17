@@ -1,19 +1,19 @@
     $(document).ready(function(){
     
-        $(".box-img").find("img").hide();
-        $(".box").mouseover(function(){
-            $(this).find("img").fadeIn("fast");
-        });
-        $(".box").mouseover(function(){
-            $(this).find("h2").fadeOut("fast");
-        });
+        // $(".box").find("h2").hide();
+        // $(".box").mouseover(function(){
+        //     $(this).find("h2").fadeIn("fast");
+        // });
+        // $(".box").mouseover(function(){
+        //     $(this).find("img").fadeOut("fast");
+        // });
 
-        $(".box").mouseleave(function(){
-            $(this).find("img").fadeOut("fast");
-        });
-         $(".box").mouseleave(function(){
-            $(this).find("h2").fadeIn("fast");
-        });
+        // $(".box").mouseleave(function(){
+        //     $(this).find("h2").fadeOut("fast");
+        // });
+        //  $(".box").mouseleave(function(){
+        //     $(this).find("img").fadeIn("fast");
+        // });
 
         $(".main-nav li a").mouseover(function(){
             $(this).css("background-color", "#ededed");
