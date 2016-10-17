@@ -496,11 +496,11 @@
     }
 
     .font-b{
-        font-weight: bold;
+        font-weight: 500;
         padding-top :5px;
         padding-bottom: 5px !important;
         margin-bottom: 0px;
-        font-size: 16px !important; 
+        font-size: 18px !important; 
     }
 
     #in-content-main-000:hover, #in-content-main-001:hover, #in-content-main-002:hover
