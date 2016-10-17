@@ -563,7 +563,7 @@
         //margin: 10px 0 0px 0;
         font-size: 25px;
         font-weight: 300;
-        text-shadow:2px 2px 2px #cccccc;
+        //text-shadow:2px 2px 2px #cccccc;
         padding: 10px;
         letter-spacing: 2px;
     }
@@ -643,7 +643,7 @@
             margin: 10px 0 0px 0;
             font-size: 16px;
             font-weight: 300;
-            text-shadow:2px 2px 2px #cccccc;
+            //text-shadow:2px 2px 2px #cccccc;
         }
         .box:first-child h2{
             text-shadow:0px 0px 0px;
