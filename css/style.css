@@ -551,8 +551,8 @@
         width: 100%;
     }
     .box-img{
-        opacity:0.8;
-        filter:alpha(opacity=80); /* 针对 IE8 以及更早的版本 */ 
+        opacity:0.9;
+        filter:alpha(opacity=90); /* 針對IE8以及更早的版本 */ 
         height:auto;
         overflow: hidden;
     }
