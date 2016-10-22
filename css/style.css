@@ -343,6 +343,7 @@
         line-height: 100px;
         letter-spacing: 1px;
         clear: both;
+        width: 95%;
     }
     footer address{
         margin:0px;
