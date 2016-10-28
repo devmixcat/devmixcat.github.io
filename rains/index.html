@@ -64,7 +64,7 @@
 	}
 	chgLeftAndTop();
 	function chgLeftAndTop(){
-		for(i=0;i<rainNum;i++){
+		for(i=0;i<randRange(0,1000);i++){
 		  $(".rain"+i).css("left",randRange(0,1600));
 		  $(".rain"+i).css("top",randRange(-1000,1400));
 		}
