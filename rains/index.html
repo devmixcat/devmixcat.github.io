@@ -64,9 +64,9 @@
 	}
 	chgLeftAndTop();
 	function chgLeftAndTop(){
-		for(i=0;i<randRange(0,1000);i++){
-		  $(".rain"+randRange(0,1000)).css("left",randRange(0,1600));
-		  $(".rain"+randRange(0,1000)).css("top",randRange(-1000,1400));
+		for(i=0;i<randRange(0,rainNum);i++){
+		  $(".rain"+randRange(0,rainNum)).css("left",randRange(0,1600));
+		  $(".rain"+randRange(0,rainNum)).css("top",randRange(-1000,1400));
 		}
 		setTimeout("chgLeftAndTop()", 3000);
 	}
