@@ -4,46 +4,46 @@
 		  position: relative;
 		}
 
-		html, body {
-		  height: 100%;
-		  width: 100%;
-		  overflow: hidden;
-		  background-color: black;
-		}
+	html, body {
+	  height: 100%;
+	  width: 100%;
+	  overflow: hidden;
+	  background-color: black;
+	}
 
-		#sky {
-		  height: 100%;
-		  width: 100%;
-		  overflow: hidden;
-		}
+	#sky {
+	  height: 100%;
+	  width: 100%;
+	  overflow: hidden;
+	}
 
-		.rain {
-		  width: 1px;
-		  height: 50px;
-		  position: absolute;
-		  top: 0;
-		  animation: rainrop 1s infinite linear;
-		  background-color: #62cff7;
-		  background: -webkit-linear-gradient(transparent,#62cff7);
-		  background: -o-linear-gradient(transparent,#62cff7);
-		  background: -moz-linear-gradient(transparent,#62cff7);
-		  background: linear-gradient(transparent,#62cff7);
-		}
+	.rain {
+	  width: 1px;
+	  height: 80px;
+	  position: absolute;
+	  top: 0;
+	  animation: rainrop 1s infinite linear;
+	  background-color: #62cff7;
+	  background: -webkit-linear-gradient(transparent,#62cff7);
+	  background: -o-linear-gradient(transparent,#62cff7);
+	  background: -moz-linear-gradient(transparent,#62cff7);
+	  background: linear-gradient(transparent,#62cff7);
+	}
 
-		.cloud:before, .cloud:after {
-		  context: "";
-		  border: 1px solid white;
-		}
+	.cloud:before, .cloud:after {
+	  context: "";
+	  border: 1px solid white;
+	}
 
-		@keyframes rainrop {
-		  0% {
-		    transform: translateY(0%);
-		  }
-		  100% {
-		    transform: translateY(1000px);
-		    opacity: 0;
-		  }
-		}
+	@keyframes rainrop {
+	  0% {
+	    transform: translateY(0%);
+	  }
+	  100% {
+	    transform: translateY(1000px);
+	    opacity: 0;
+	  }
+	}
 
 	</style>
 	<body>
@@ -55,25 +55,25 @@
 	</body>
 	<script src="../js/jquery.min.js"></script>
 	<script>
-	var rainNum = 1000;
-	// function to generate a random number range.
-	function randRange( minNum, maxNum) {
-	  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
-	}
-	for(i=0;i<rainNum;i++){
-	  $("#sky").append('<div class="rain rain'+i+'"></div>');
-	  $(".rain"+i).css("left",randRange(0,1600));
-	  $(".rain"+i).css("top",randRange(-1000,1400));
-	  $(".rain"+i).css("animation-delay","-"+Math.round(Math.random())+"."+Math.floor((Math.random() * 10) + 1)+"s");
-	}
-	chgLeftAndTop();
-	function chgLeftAndTop(){
-		for(i=0;i<randRange(0,rainNum);i++){
-		  $(".rain"+randRange(0,rainNum)).css("left",randRange(0,1600));
-		  $(".rain"+randRange(0,rainNum)).css("top",randRange(-1000,1400));
+		var rainNum = 800;
+		// function to generate a random number range.
+		function randRange( minNum, maxNum) {
+		  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
 		}
-		setTimeout("chgLeftAndTop()", 3000);
-	}
+		for(i=0;i<rainNum;i++){
+		  $("#sky").append('<div class="rain rain'+i+'"></div>');
+		  $(".rain"+i).css("left",randRange(0,1600));
+		  $(".rain"+i).css("top",randRange(-1000,1400));
+		  $(".rain"+i).css("animation-delay","-"+Math.round(Math.random())+"."+Math.floor((Math.random() * 10) + 1)+"s");
+		}
+		chgLeftAndTop();
+		function chgLeftAndTop(){
+			for(i=0;i<randRange(0,rainNum);i++){
+			  $(".rain"+randRange(0,rainNum)).css("left",randRange(0,1600));
+			  $(".rain"+randRange(0,rainNum)).css("top",randRange(-1000,1400));
+			}
+			setTimeout("chgLeftAndTop()", 3000);
+		}
 	</script>
 
 </html>
