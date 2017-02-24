@@ -1,0 +1,167 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+		<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+			position: relative;
+			box-sizing: border-box;
+			//border: 1px black solid;
+		}
+		body{
+			background: #dfdfdf;
+		}
+		article{
+			height: 100%;
+		}
+		.page {
+		    width: 90vw;
+		    //height: 90vh;
+		    height: 400px;
+		    margin-left: 5vw;
+		    margin-right: 5vw;
+		    margin-bottom: 2vh;
+		    vertical-align: top;
+		    font-size: initial;
+		    background-color: white;
+		    border-radius: 8px;
+		 	display: -webkit-flex;
+		 	display: flex;
+		  	-webkit-align-items: center;
+		    align-items: center;
+		  	-webkit-justify-content: center;
+		    justify-content: center;
+		}
+		.page:first-child{
+			margin-top: 15vh;
+		}
+		.pic{
+			//margin-left: 13vw;
+			float:left;
+			height: 50vh;
+			width: 40vw;
+		}
+		.context{
+			height: 50vh;
+			width: 20vw;
+			float: left;
+		}
+		.nav{
+			height: 10vh;
+			width: 100vw;
+			background: #cfcfcf;
+			left: 0px;
+			top: 0px;
+			z-index: 50;
+			position: fixed;
+			border-bottom: 2px #d5d5d5 solid;
+		}
+		.nav span{
+			font-family: 'BenchNine', sans-serif;
+			width: 100%;
+			height: 10vh;
+			top: 0vh;
+			line-height: 10vh;
+			text-align: left;
+			padding-left: 2vw;
+			color: white;
+			font-size: 25px;
+			letter-spacing: 2px;
+		}
+		.nav .progress-bar {
+			width: 0%;
+			height: 100%;
+			max-width: 100%;
+		    //position: absolute;
+		    bottom: 2px;
+		    height: 2px;
+		    background: #ff7e5f;
+		    //float: left;
+		    -webkit-transition: width .8s;
+		    transition: width .8s;
+		    z-index: 99;
+		}
+		
+		</style>
+
+	</head>
+	<body>
+		<div class="nav">
+			<span>YI-AN LIN</span>
+			<div class="progress-bar"></div>
+		</div>
+		<article>
+			<div class="page">
+				<div class="pic">
+					 
+				</div>
+				<div class="context">
+					<p>test</p>
+					<p>123</p>
+				</div>
+			</div>
+			<div class="page">
+				<div class="pic">
+					 
+				</div>
+				<div class="context">
+					<p>test</p>
+					<p>123</p>
+				</div>
+			</div>
+			<div class="page">
+				<div class="pic">
+					 
+				</div>
+				<div class="context">
+					<p>test</p>
+					<p>123</p>
+				</div>
+			</div>
+			<div class="page">	
+				<div class="pic">
+				 
+				</div>
+				<div class="context">
+					<p>test</p>
+					<p>123</p>
+				</div>
+			</div>
+			<div class="page">	
+				<div class="pic">
+				 
+				</div>
+				<div class="context">
+					<p>test</p>
+					<p>123</p>
+				</div>
+			</div>
+			<div class="page">	
+				<div class="pic">
+				 
+				</div>
+				<div class="context">
+					<p>test</p>
+					<p>123</p>
+				</div>
+			</div>
+		</article>
+	</body>
+
+<script src="./js/jquery.min.js"></script>
+<script>
+$(window).load(function(){
+  $(window).scroll(function() {
+    var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+    console.log("wintop:"+wintop);
+    console.log("docheight:"+docheight);
+    console.log("winheight:"+winheight);
+    var totalScroll = (wintop/(docheight-winheight))*100;
+    console.log("totalScroll:" + totalScroll);
+    $(".nav .progress-bar").css("width",totalScroll+"%");
+  });
+
+});
+</script>
+</html>
