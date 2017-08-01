@@ -27,7 +27,7 @@
         height: 80px;
         line-height: 80px;
         max-width: 1013px;
-        //width:100%;       
+        //width:100%;
         margin: 0px auto;
         position: relative;
         //min-width: 600px;
@@ -68,10 +68,11 @@
         padding: 0px;
 
     }
-   
+
     #div-nav-left a{
         vertical-align : middle;
-        font-style: italic;
+        --font-style: italic;
+        font-size: 25px;
         display: inline-block;
         line-height: 80px;
         height:80px;
@@ -114,7 +115,7 @@
         top: 0;
     }
 
-    .navbar-fixed-top{     
+    .navbar-fixed-top{
         border-width:0 0 1px;
         left: 0;
         position: fixed;
@@ -130,13 +131,13 @@
         line-height: 80px;
         min-height: 80px;
         background-color: rgba(255,255,255,0.75) !important;
-        border-color: #080808; 
+        border-color: #080808;
         border-bottom: 1px solid #ccc;
     }
     @media screen and (m-width: 992px){
 
     }
-    .navbar-index{ 
+    .navbar-index{
         border-bottom: none;
     }
 

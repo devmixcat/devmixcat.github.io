@@ -1,5 +1,5 @@
     $(document).ready(function(){
-    
+
         $(".box-img").find("img").hide();
         $(".box").mouseover(function(){
             $(this).find("img").fadeIn("fast");
@@ -24,7 +24,7 @@
             $(this).css("background-color", "transparent");
             $(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
         });
-        
+
         $(".menu-inline li a").mouseover(function(){
             $(this).css("background-color", "#ededed");
             //$(this).find("span").animate({"margin-left":"0px"},"slow").css("color", "black");
@@ -170,7 +170,7 @@
                 $("#slides").fadeOut("slow");
                 $("#menu-main").fadeIn("slow");
             }
-           
+
         }
 
     });
@@ -188,9 +188,34 @@
         $(".b2").css({"transform":"translateY(4px)","left":"20px","width":"0px"});
         $(".b").css({"background":"transparent"});
     }
-    
+
     //當網站load完成將loding的div隱藏
     $(window).load(function(){
         $("#div-loading").toggle("slow");
     });
-    
+
+
+    function randomColor(){
+      var randomNum = randRange(0,1);
+      return randomNum;
+    }
+
+    function randRange( minNum, maxNum) {
+      return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+    }
+
+    var blockSize = $(".block").length;
+
+    function changeColor(){
+      for(i=0; i<blockSize; i++){
+        $(".random-color:eq("+i+")").css("background-color","rgb("+randomColor()+","+randomColor()+","+randomColor()+")");
+      }
+          setTimeout(function(){
+        changeColor();
+    },100);
+
+    }
+    //changeColor();
+    setTimeout(function(){
+        changeColor();
+    },100);
