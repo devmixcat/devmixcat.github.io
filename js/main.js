@@ -42,6 +42,21 @@
             }
         );
 
+        //偵測bitch按下
+        var map = {66: false, 73: false, 84: false ,67: false,72: false};
+        $(document).keydown(function(e) {
+            if (e.keyCode in map) {
+                map[e.keyCode] = true;
+                if (map[66] && map[73] && map[84] && map[67] && map[72]) {
+                    window.open("./bitch.html","BITCH");
+                }
+            }
+        }).keyup(function(e) {
+            if (e.keyCode in map) {
+                map[e.keyCode] = false;
+            }
+        });
+
             /*
             $("#in-content-main-000").mouseover(function () {
                 $("#in-content-main-000").removeClass("grayscale");
