@@ -320,42 +320,51 @@
     #in-content-main-000{
         background-image: url('../img/pics/000/000-cover.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #in-content-main-001{
          background-image: url('../img/pics/fukakusa/banner.jpg');
          background-repeat: no-repeat;
+         background-size: cover;
     }
 
     #in-content-main-002{
          background-image: url('../img/pics/002.jpg');
          background-repeat: no-repeat;
+         background-size: cover;
     }
 
     #in-content-main-003{
          background-image: url('../img/pics/cheers/banner.jpg');
          background-repeat: no-repeat;
+         background-size: cover;
     }
 
     #in-content-main-004{
         background-image: url('../img/pics/004/004.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
     }
     #in-content-main-005{
         background-image: url('../img/pics/005/005.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
     }
     #in-content-main-006{
         background-image: url('../img/pics/006/006.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
     }
     #in-content-main-007{
         background-image: url('../img/pics/007/007.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
     }
     #in-content-main-008{
         background-image: url('../img/pics/008/008.jpg');
         background-repeat: no-repeat;
+        background-size: cover;　
     }
     #in-content-main-000,#in-content-main-001,#in-content-main-002,#in-content-main-003,#in-content-main-004,#in-content-main-005
     ,#in-content-main-006,#in-content-main-007,#in-content-main-008{
