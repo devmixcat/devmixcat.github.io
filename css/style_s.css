@@ -272,11 +272,8 @@
         right:0px;
         bottom:0px;
     }
-    footer #footer_div{
+    footer p{
         text-align: center;
-    }
-
-    footer #footer_div p{
         color: black;
         font-weight: 300;
         font-size: 18px;
