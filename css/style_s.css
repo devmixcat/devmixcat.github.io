@@ -274,8 +274,9 @@
     }
     footer #footer_div{
         text-align: center;
-
+        width: 100%;
     }
+
     footer #footer_div p{
         color: black;
         font-weight: 300;
