@@ -106,6 +106,10 @@
         display: none;
     }
 
+    #menu-main .fb-like{
+        align-self: center;
+        margin-top: 10px;
+    }
     .primary-nav {
         background: rgba(256, 256, 256, 0.98);
         height: 100%;
