@@ -206,7 +206,7 @@
 
     //當網站load完成將loding的div隱藏
     $(window).load(function(){
-        $("#div-loading").toggle("slow");
+        $("#div-loading").fadeToggle("slow");
     });
 
 
