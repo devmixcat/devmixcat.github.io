@@ -385,7 +385,22 @@
         -moz-transition: filter 1s linear; /* Firefox */
         -webkit-transition: filter 1s linear; /*safari and chrome */
     }
-
+    @media screen and (max-width: 992px){
+        #in-content-main-000,#in-content-main-001,#in-content-main-002,#in-content-main-003,#in-content-main-004,#in-content-main-005
+        ,#in-content-main-006,#in-content-main-007,#in-content-main-008{
+             -webkit-filter: grayscale(0%);
+             -moz-filter: grayscale(0%);
+             -ms-filter: grayscale(0%);
+             -o-filter: grayscale(0%);
+             filter: grayscale(0%);
+             filter: gray;
+            transition: filter 1s linear; /* vendorless fallback */
+            -o-transition: filter 1s linear; /* opera */
+            -ms-transition: filter 1s linear; /* IE 10 */
+            -moz-transition: filter 1s linear; /* Firefox */
+            -webkit-transition: filter 1s linear; /*safari and chrome */
+        }
+    }
     .grayscale {
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
@@ -417,6 +432,13 @@
         -o-filter: grayscale(0%);
         filter: grayscale(0%);
         filter: gray;
+    }
+    @media screen and (max-width: 992px){
+        #in-content-main-000:hover, #in-content-main-001:hover, #in-content-main-002:hover
+        , #in-content-main-003:hover,#in-content-main-004:hover,#in-content-main-005:hover,#in-content-main-006:hover
+        ,#in-content-main-007:hover,#in-content-main-008:hover  {
+        
+        }
     }
 
     @keyframes ai1{
