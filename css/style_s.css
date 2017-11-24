@@ -386,8 +386,13 @@
         background-repeat: no-repeat;
         background-size: cover;　
     }
+    #in-content-main-014{
+        background-image: url('../img/pics/hk01/cover.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;　
+    }
     #in-content-main-000,#in-content-main-001,#in-content-main-002,#in-content-main-003,#in-content-main-004,#in-content-main-005
-    ,#in-content-main-006,#in-content-main-007,#in-content-main-008,#in-content-main-010,#in-content-main-013,#in-content-main-012{
+    ,#in-content-main-006,#in-content-main-007,#in-content-main-008,#in-content-main-010,#in-content-main-013,#in-content-main-012,#in-content-main-014{
          -webkit-filter: grayscale(100%);
          -moz-filter: grayscale(100%);
          -ms-filter: grayscale(100%);
@@ -402,7 +407,7 @@
     }
     @media screen and (max-width: 992px){
         #in-content-main-000,#in-content-main-001,#in-content-main-002,#in-content-main-003,#in-content-main-004,#in-content-main-005
-        ,#in-content-main-006,#in-content-main-007,#in-content-main-008,#in-content-main-010,#in-content-main-013,#in-content-main-012{
+        ,#in-content-main-006,#in-content-main-007,#in-content-main-008,#in-content-main-010,#in-content-main-013,#in-content-main-012,#in-content-main-014{
              -webkit-filter: grayscale(0%);
              -moz-filter: grayscale(0%);
              -ms-filter: grayscale(0%);
@@ -440,7 +445,7 @@
 
     #in-content-main-000:hover, #in-content-main-001:hover, #in-content-main-002:hover
     , #in-content-main-003:hover,#in-content-main-004:hover,#in-content-main-005:hover,#in-content-main-006:hover
-    ,#in-content-main-007:hover,#in-content-main-008:hover,#in-content-main-010:hover,#in-content-main-013:hover,#in-content-main-012:hover  {
+    ,#in-content-main-007:hover,#in-content-main-008:hover,#in-content-main-010:hover,#in-content-main-013:hover,#in-content-main-012:hover,#in-content-main-014:hover  {
         -webkit-filter: grayscale(0%);
         -moz-filter: grayscale(0%);
         -ms-filter: grayscale(0%);
@@ -451,7 +456,7 @@
     @media screen and (max-width: 992px){
         #in-content-main-000:hover, #in-content-main-001:hover, #in-content-main-002:hover
         , #in-content-main-003:hover,#in-content-main-004:hover,#in-content-main-005:hover,#in-content-main-006:hover
-        ,#in-content-main-007:hover,#in-content-main-008:hover,#in-content-main-010:hover,#in-content-main-013:hover,#in-content-main-012:hover   {
+        ,#in-content-main-007:hover,#in-content-main-008:hover,#in-content-main-010:hover,#in-content-main-013:hover,#in-content-main-012:hover,#in-content-main-014:hover     {
 
         }
     }
